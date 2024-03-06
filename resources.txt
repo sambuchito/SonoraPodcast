@@ -1,3 +1,4 @@
 Resources:
 
 iconos: https://www.svgrepo.com
+paleta de colores: #9D2972 #C22FA7 #46154B #7A19B6 #472D85
