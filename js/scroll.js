@@ -1,13 +1,16 @@
-const headerbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
+console.log(navbar)
 let scrolled = false;
 window.onscroll = () => {
     let last_scrolled = scrolled;
-    if (window.scrollY>0){
+    if (window.scrollY>5){
         scrolled = true;
     }else{
         scrolled = false;
     }
     if (last_scrolled != scrolled){
-        headerbar.className;
+        navbar.classList.add('nav_hidden');
+    }else{
+        
     }
 }
