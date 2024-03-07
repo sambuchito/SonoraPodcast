@@ -16,14 +16,10 @@ window.onscroll = () => {
             navbar.classList.add("nav_hidden");
             logo1.classList.add("logo1_hidden");
             logo2.classList.remove("logo2_hidden");
-            logo1.style = "display: none";
-            logo2.style = "display: flex";
         }else{
             navbar.classList.remove("nav_hidden")
             logo1.classList.remove("logo1_hidden")
             logo2.classList.add("logo2_hidden")
-            logo1.style = "display: flex";
-            logo2.style = "display: none";
         }
     }
     
