@@ -1,18 +1,23 @@
+:root{
+    --color1: #9D2972;
+    --color2: #C22FA7;
+    --color3: #46154B;
+    --color4: #7A19B6;
+    --color5: #472D85;
+}
 html{
     all: unset;
 }
-
 body{
     width: 100%;
-    background: linear-gradient(#472D85, #C22FA7);
-    color: #ffffff;
-    height: 2000px;
+    background: linear-gradient(var(--color5), var(--color1));
+    color: white;
+    height: 1080px;
     scrollbar-gutter: stable;
 }
 body::-webkit-scrollbar{
     width: 0;
 }
-
 nav{
     width: 100%;
     height: 200px;
@@ -20,12 +25,10 @@ nav{
     justify-content: center;
     position: fixed;
 }
-
 .nav_hidden{
     height: 100px;
     justify-content: left;
 }
-
 #nav_logo1{
     height: 200px;
     animation-name: showup_logo1;
