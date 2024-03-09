@@ -78,6 +78,12 @@ p{
     font-family: 'Parrafos';
     font-size: 20px;
 }
+#about p{
+    width: 950px;
+}
+#about h1{
+    width: 950px;
+}
 #about{
     height: 100%;
     display: flex;

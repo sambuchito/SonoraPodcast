@@ -7,10 +7,19 @@ let scrolled = false;
 window.onscroll = () => {
     let last_scrolled = false;
     last_scrolled = scrolled;
-    if (window.scrollY>380){
-        scrolled = true;
+    if (window.scrollY>=200){
+        if (window.scrollY>380){
+            scrolled = true;
+        }else{
+            scrolled = false;
+        }
     }else{
-        scrolled = false;
+        console.log(window.scrollY)
+        if (window.scrollY>200){
+            scrolled = true;
+        }else{
+            scrolled = false;
+        }
     }
     if (last_scrolled!=scrolled){
         if (!navbar.classList.contains("nav_hidden")&&scrolled){
