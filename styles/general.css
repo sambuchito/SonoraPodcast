@@ -5,18 +5,35 @@
     --color4: #7A19B6;
     --color5: #472D85;
 }
+@font-face {
+    font-family: 'Titulos';
+    src: url('../resources/CODE\ Light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Parrafos';
+    src: url('../resources/Garet-Book.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 html{
     all: unset;
 }
 body{
     width: 100%;
-    background: linear-gradient(var(--color5), var(--color1));
     color: white;
-    height: 1080px;
+    margin: 0;
     scrollbar-gutter: stable;
 }
 body::-webkit-scrollbar{
     width: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(var(--color5) 25%, var(--color1), var(--color3));
 }
 nav{
     width: 100%;
@@ -24,6 +41,7 @@ nav{
     display: flex;
     justify-content: center;
     position: fixed;
+    background: linear-gradient(var(--color5) 80%, transparent);
 }
 .nav_hidden{
     height: 100px;
@@ -49,4 +67,97 @@ nav{
 @keyframes showup_logo2 {
     from{transform: translateY(-100px);}
     to{transform: translateY(0px);}
+}
+h1{
+    font-family: 'Titulos';
+    font-size: 100px;
+    text-align: center;
+}
+p{
+    font-family: 'Parrafos';
+    font-size: 20px;
+}
+#about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    animation-name: about_showup;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes about_showup {
+    from{
+        opacity: 0;
+        font-size: 7px;
+    }
+    to{
+        opacity: 100%;
+        font-size: 20px;
+    }
+}
+#contacto{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color3);
+    font-family: 'Titulos';
+    font-size: 50px;
+}
+h2{
+    font-family: 'Titulos';
+}
+#contacto h2{
+    margin-bottom: 10px;
+}
+#form_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 350px;
+}
+input, textarea{
+    all: unset;
+    background-color: #00000050;
+    border: rgba(0, 0, 0, 0.301) solid 3px;
+    border-radius: 10px;
+    font-family: 'Parrafos';
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 150px; 
+    height: 25px;
+}
+input:focus-visible{
+    width: 100%;
+    transition: width 0.5s;
+}
+textarea:focus-visible{
+    width: 100%;
+    transition: width 0.5s;
+}
+textarea::-webkit-scrollbar{
+    background-color: transparent;
+}
+#submit{
+    text-align: center;
+    width: 100px;
+    transition: width 0.5s ease-out;
+}
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.5s ease-out;
+}
+#foot{
+    height: 80px;
+    background-color: black;
 }

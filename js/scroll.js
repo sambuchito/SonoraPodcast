@@ -6,7 +6,7 @@ let scrolled = false;
 window.onscroll = () => {
     let last_scrolled = false;
     last_scrolled = scrolled;
-    if (window.scrollY>5){
+    if (window.scrollY>80){
         scrolled = true;
     }else{
         scrolled = false;
