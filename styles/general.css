@@ -12,6 +12,12 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: 'Titulos_2';
+    src: url('../resources/CODE\ Light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: 'Parrafos';
     src: url('../resources/Garet-Book.ttf') format('truetype');
     font-style: normal;
