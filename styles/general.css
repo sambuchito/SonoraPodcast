@@ -29,7 +29,7 @@ body{
     background-image: url(/resources/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #46154B;
+    background-color: var(--color3);
     background-attachment: fixed;
 }
 body::-webkit-scrollbar{
