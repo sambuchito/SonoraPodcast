@@ -25,7 +25,6 @@ body{
     color: white;
     margin: 0;
     scrollbar-gutter: stable;
-    /*background: linear-gradient(var(--color1) 25%, var(--color5) 40%, var(--color5) 60%, var(--color3));*/
     background-image: url('../resources/fondo.svg');
     background-repeat: no-repeat;
     background-size: cover;
