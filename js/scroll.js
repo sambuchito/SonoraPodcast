@@ -14,7 +14,6 @@ window.onscroll = () => {
             scrolled = false;
         }
     }else{
-        console.log(window.scrollY)
         if (window.scrollY>200){
             scrolled = true;
         }else{
