@@ -105,9 +105,15 @@ p{
     justify-items: center;
     width: 80%;
     margin-bottom: 200px;
-    animation-name: about_showup;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
+    animation: about_showup ease-out both;
+    animation-duration: 0.8s;
+}
+@supports (animation-timeline: view()){
+    #about{
+        animation: about_showup ease-out both;
+        animation-timeline: view();
+        animation-range: entry 80% cover 70%; 
+    }
 }
 .about_nav_hidden{
     margin-top: 95vh;
