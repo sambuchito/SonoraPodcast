@@ -90,10 +90,11 @@ p{
     z-index: 2;
 }
 #about p{
-    width: 950px;
+    width: 850px;
+    text-align: justify;
 }
 #about h1{
-    width: 950px;
+    width: 850px;
 }
 #about{
     height: 100%;
@@ -127,7 +128,7 @@ p{
     flex-direction: column;
     align-items: center;
     font-family: 'Titulos';
-    font-size: 50px;
+    font-size: 40px;
 }
 h2{
     font-family: 'Titulos';
@@ -182,7 +183,14 @@ textarea::-webkit-scrollbar{
 }
 #foot{
     height: 80px;
-    background-color: black;
+    background: linear-gradient(transparent, black 15%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#foot h3{
+    font-family: 'Titulos_2';
 }
 #backgroundsvg{
     position: fixed;
