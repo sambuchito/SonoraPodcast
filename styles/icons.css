@@ -4,9 +4,9 @@
    text-transform: uppercase;
    letter-spacing: 3px;
    padding: 4px;
-   width: 190px;
+   width: 150px;
    position: fixed;
-   right: -150px;
+   right: -110px;
    z-index: 1000;
    font: normal normal 10px Arial;
    -webkit-transition: all .25s ease;
@@ -40,23 +40,23 @@
  }
 
  .float-fb {
-   top: calc(30% + 55px);
+   top: 350px;
  }
 
  .float-tw {
-   top: calc(38% + 55px);
+   top: 405px;
  }
 
  .float-ig {
-   top: calc(46% + 55px);
+   top: 460px;
  }
 
  .float-yt {
-   top: calc(54% + 55px);
+   top: 515px;
  }
 
  .float-spotify {
-   top: calc(62% + 55px);
+   top: 570px;
  }
 
  /* bloque etiqueta negra  */
