@@ -4,10 +4,11 @@
     <title>Sonora Podcast</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/mobile.css">
@@ -90,19 +91,34 @@
         </div>
         <!-- bloque etiqueta negra -->
 
-        <!-- bloque W3 -->
-        <div class="float-md-left">
-            <div class="float-md-left">
-                <div id="float-contacto" class="float-left float-rs">
-            <h3>Contacto</h3>
-            <form action="#" method="post" id="form_contacto">
-                <input type="email" name="contact-float" id="email" placeholder="E-Mail">
-                <textarea name="contact" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input id="submit" type="submit" value="Enviar">
+        <div class="sidebar-contact">
+            <div class="toggle"></div>
+            <h2>Contact Us</h2>
+            <div class="scroll">
+            <form>
+              <!-- <input type="text" name="" placeholder="Name"> -->
+              <input id="email" type="email" name="contact" placeholder="Email">
+              <!-- <input type="rel" name="" placeholder="Phone Number"> -->
+              <textarea name="contact" id="mensaje" placeholder="Message here.."></textarea>
+              <input id="submit" type="submit" name="" value="Enviar">
             </form>
-        </div>
-    </div>
-        </div>
+            </div>
+          </div>
+
+        <!-- bloque float form -->
+
+        <!-- <div class="float-sm">
+            <div class="float-sm">
+                <div id="float-contacto" class="fl float-rs">
+                    <h3>Contacto</h3>
+                    <form action="#" method="post" id="float-form_contacto">
+                        <input type="email" name="contact-float" id="email" placeholder="E-Mail">
+                        <textarea name="contact" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input id="submit" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div> -->
 
   
         <div id="video">
