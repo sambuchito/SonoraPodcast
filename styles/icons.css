@@ -6,7 +6,7 @@
    padding: 4px;
    width: 190px;
    position: fixed;
-   right: -160px;
+   right: -150px;
    z-index: 1000;
    font: normal normal 10px Arial;
    -webkit-transition: all .25s ease;
