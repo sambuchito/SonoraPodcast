@@ -38,10 +38,24 @@ body::-webkit-scrollbar{
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+main>div{
+    background-color: #00000040;
+    padding: 0;
+    height: 100px;
+    width: 950px;
+}
+#video{
+    border-radius: 25px 25px 0 0;
+}
+#carrousel{
+    border-radius: 0 0 25px 25px;
 }
 nav{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,6 +96,7 @@ h1{
     font-size: 100px;
     text-align: center;
     z-index: 2;
+    margin: 20px;
 }
 p{
     font-family: 'Parrafos';
@@ -90,10 +105,10 @@ p{
 }
 #about p{
     width: 850px;
-    text-align: justify;
 }
 #about h1{
     width: 850px;
+    margin-top: 35px;
 }
 #about{
     height: 100%;
@@ -102,8 +117,7 @@ p{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    width: 80%;
-    margin-bottom: 200px;
+    width: 950px;
     animation: about_showup ease-out both;
     animation-duration: 0.8s;
 }
