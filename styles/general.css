@@ -30,8 +30,11 @@ body {
     color: white;
     margin: 0;
     scrollbar-gutter: stable;
-    background: linear-gradient(var(--color1) 25%, var(--color5) 40%, var(--color5) 60%, var(--color3));
-    ;
+    background-image: url('../resources/fondo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color3);
+    background-attachment: fixed;
 }
 
 body::-webkit-scrollbar {
@@ -41,15 +44,41 @@ body::-webkit-scrollbar {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: about_showup ease-out both;
+    animation-duration: 0.8s;
+}
+main>div{
+    background-color: #00000040;
+    padding: 0;
+    width: 950px;
+}
+#video{
+    border-radius: 25px 25px 0 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#carrousel{
+    border-radius: 0 0 25px 25px;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
 }
 
 nav {
     width: 100%;
-    height: 380px;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
-
     z-index: 10;
 }
 
@@ -57,21 +86,19 @@ nav {
     height: 100px;
     justify-content: left;
     position: fixed;
-    background: linear-gradient(var(--color5) 80%, transparent);
     animation-name: showup_logo2;
     animation-duration: 0.5s;
 }
-
-#nav_logo1 {
-    height: 380px;
+#nav_logo1{
+    height: 400px;
     animation-name: showup_logo1;
-    animation-duration: 0.6s;
+    animation-duration: 0.9s;
     z-index: 2;
 }
 
 #nav_logo2 {
     height: 100px;
-    margin-left: 10%;
+    margin-left: 5px;
     z-index: 2;
 }
 
@@ -80,13 +107,8 @@ nav {
 }
 
 @keyframes showup_logo1 {
-    from {
-        transform: translateY(-380px);
-    }
-
-    to {
-        transform: translateY(0px);
-    }
+    from{transform: translateY(-500px);}
+    to{transform: translateY(0px);}
 }
 
 @keyframes showup_logo2 {
@@ -104,20 +126,20 @@ h1 {
     font-size: 100px;
     text-align: center;
     z-index: 2;
+    margin: 20px;
 }
 
 p {
     font-family: 'Parrafos';
-    font-size: 20px;
+    font-size: 25px;
     z-index: 2;
 }
-
-#about p {
-    width: 950px;
+#about p{
+    width: 850px;
 }
-
-#about h1 {
-    width: 950px;
+#about h1{
+    width: 850px;
+    margin-top: 35px;
 }
 
 #about {
@@ -127,15 +149,10 @@ p {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    width: 80%;
-    margin-bottom: 200px;
-    animation-name: about_showup;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
+    width: 950px;
 }
-
-.about_nav_hidden {
-    margin-top: 380px;
+.about_nav_hidden{
+    margin-top: 100vh;
 }
 
 @keyframes about_showup {
@@ -149,80 +166,20 @@ p {
         font-size: 20px;
     }
 }
-
-#contacto {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Titulos';
-    font-size: 50px;
-}
-
-h2 {
+h2{
     font-family: 'Titulos';
     z-index: 2;
 }
-
-#contacto h2 {
-    margin-bottom: 10px;
-}
-
-#form_contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    width: 350px;
-}
-
-input,
-textarea {
-    all: unset;
-    background-color: #00000050;
-    border: rgba(0, 0, 0, 0.301) solid 3px;
-    border-radius: 10px;
-    font-family: 'Parrafos';
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    width: 150px;
-    height: 25px;
-    z-index: 2;
-    transition: all 0.5s;
-}
-
-input:focus-visible {
-    width: 350px;
-    transition: all 0.5s;
-}
-
-textarea:focus-visible {
-    width: 350px;
-    height: 150px;
-    transition: all 0.5s;
-}
-
-textarea::-webkit-scrollbar {
-    background-color: transparent;
-}
-
-#submit {
-    text-align: center;
-    width: 80px;
-    transition: width 0.5s ease-out;
-}
-
-#submit:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    width: 150px;
-    transition: all 0.5s ease-out;
-}
-
-#foot {
+footer{
     height: 80px;
-    background-color: black;
+    background-color: #00000050;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer h3{
+    font-family: 'Titulos_2';
 }
 
 #backgroundsvg {
