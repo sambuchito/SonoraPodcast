@@ -2,9 +2,9 @@ document.getElementById('submit').addEventListener('click', (event) => {
     event.preventDefault();
 });
 
-$(document).ready(function(){
-    $('.toggle').click(function(){
-      $('.sidebar-contact').toggleClass('active')
-      $('.toggle').toggleClass('active')
-    })
-  })
+const togglebtn = document.getElementById("togglebtn");
+const sidebar = document.getElementById("sidebarcontact");
+togglebtn.addEventListener("click", ()=>{
+  togglebtn.classList.toggle('active');
+  sidebar.classList.toggle('active');
+})
