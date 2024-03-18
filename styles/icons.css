@@ -1,64 +1,62 @@
- 
  /* bloque etiqueta negra  */
-  .fl-fl {
-    background: #000000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 4px;
-    width: 190px;
-    position: fixed;
-    right: -160px;
-    z-index: 1000;
-    font: normal normal 10px Arial;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-  }
+ .fl-fl {
+   background: #00000060;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   padding: 4px;
+   width: 190px;
+   position: fixed;
+   right: -160px;
+   z-index: 1000;
+   font: normal normal 10px Arial;
+   -webkit-transition: all .25s ease;
+   -moz-transition: all .25s ease;
+   -ms-transition: all .25s ease;
+   -o-transition: all .25s ease;
+   transition: all .25s ease;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
 
-  
-  .fa {
-    font-size: 20px;
-    color: #fff;
-    padding: 10px 0;
-    width: 40px;
-    margin-left: 8px;
-  }
-  
-  .fl-fl:hover {
-    right: 0;
-  }
-  
-  .fl-fl a {
-    color: #fff !important;
-    text-decoration: none;
-    text-align: center;
-    line-height: 43px!important;
-    vertical-align: top!important;
-  }
-  
-  .float-fb {
-    top: 40%;
-  }
-  
-  .float-tw {
-    top: 45%;
-  }
-  
-  .float-ig {
-    top: 50%;
-  }
-  
-  .float-yt {
-    top: 55%;
-  }
-  
-  .float-spotify {
-    top: 60%;
-  }
-  
-  /* .float-rs {
-    top: 50%;
-  } */
-   /* bloque etiqueta negra  */
+ .fa {
+   color: #fff;
+   padding: 0;
+   width: 40px;
+   margin-left: 2px;
+ }
+
+ .fl-fl:hover {
+   right: 0;
+ }
+
+ .fl-fl a {
+   color: #fff !important;
+   text-decoration: none;
+   text-align: center;
+   line-height: 43px !important;
+   vertical-align: top !important;
+   margin-left: 5px;
+ }
+
+ .float-fb {
+   top: calc(30% + 55px);
+ }
+
+ .float-tw {
+   top: calc(38% + 55px);
+ }
+
+ .float-ig {
+   top: calc(46% + 55px);
+ }
+
+ .float-yt {
+   top: calc(54% + 55px);
+ }
+
+ .float-spotify {
+   top: calc(62% + 55px);
+ }
+
+ /* bloque etiqueta negra  */
