@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar");
 const logo1 = document.getElementById("nav_logo1");
 const logo2 = document.getElementById("nav_logo2");
-const about = document.getElementById("about");
+const about = document.getElementById("video");
 
 let scrolled = false;
 window.onscroll = () => {

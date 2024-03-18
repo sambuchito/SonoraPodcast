@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Sonora Podcast</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/carousel.css">
 </head>
+
 <body>
     <header>
         <nav id="navbar" class="">
@@ -17,35 +21,38 @@
     </header>
     <main>
         <div id="video">
-
+            <iframe width="620" height="350" src="https://www.youtube.com/embed/mEJ_jxFJU_0?si=gbcQjYYjMk78bhRi"
+                title="Sonora 2023" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div id="about">
             <h1>¿Qué es Sonora?</h1>
-            <p>Sonora es el primer evento de podcasting independiente del Uruguay. Es un encuentro para ver podcasts en vivo, compartir anécdotas sobre el detrás de escena, charlar con podcasteros, y conocer más sobre el arte de hacer escuchar.</p>
-            <p>Seas escucha, creador o simplemente tengas curiosidad por el mundo del podcast, este evento es para vos.</p>    
+            <p>Sonora es el primer evento de podcasting independiente del Uruguay. Es un encuentro para ver podcasts en
+                vivo, compartir anécdotas sobre el detrás de escena, charlar con podcasteros, y conocer más sobre el
+                arte de hacer escuchar.</p>
+            <p>Seas escucha, creador o simplemente tengas curiosidad por el mundo del podcast, este evento es para vos.
+            </p>
         </div>
         <div id="carrousel">
-
+            <div class="pic-ctn">
+                <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+              </div>
         </div>
     </main>
     <footer>
-        <div id="contacto">
-            <h2>Contacto</h2>
-            <form action="#" method="POST" id="form_contacto">
-                <input type="email" name="contact" id="email" placeholder="E-Mail">
-                <textarea name="contact" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input id="submit" type="submit" value="Enviar">
-            </form>
-        </div>
-        <div id="foot">
-            <h3>Sponsors</h3>
-            <h3>Sponsors</h3>
-            <h3>Sponsors</h3>
-            <h3>Sponsors</h3>
-            <h3>Sponsors</h3>
-        </div>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
+        <h3>Sponsors</h3>
     </footer>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/form.js"></script>
 </body>
+
 </html>
