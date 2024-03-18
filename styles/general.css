@@ -1,26 +1,31 @@
-:root{
+:root {
     --color1: #9D2972;
     --color2: #C22FA7;
     --color3: #46154B;
     --color4: #7A19B6;
     --color5: #472D85;
 }
+
 @font-face {
     font-family: 'Titulos';
     src: url('../resources/CODE\ Light.otf');
 }
+
 @font-face {
     font-family: 'Titulos_2';
     src: url('../resources/CODE\ Light.otf');
 }
+
 @font-face {
     font-family: 'Parrafos';
     src: url('../resources/Garet-Book.ttf');
 }
-html{
+
+html {
     all: unset;
 }
-body{
+
+body {
     width: 100%;
     color: white;
     margin: 0;
@@ -31,11 +36,12 @@ body{
     background-color: var(--color3);
     background-attachment: fixed;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     width: 0;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -65,7 +71,8 @@ main>div{
     justify-content: center;
     margin-bottom: 10vh;
 }
-nav{
+
+nav {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -74,7 +81,8 @@ nav{
     background-color: transparent;
     z-index: 10;
 }
-.nav_hidden{
+
+.nav_hidden {
     height: 100px;
     justify-content: left;
     position: fixed;
@@ -87,30 +95,41 @@ nav{
     animation-duration: 0.9s;
     z-index: 2;
 }
-#nav_logo2{
+
+#nav_logo2 {
     height: 100px;
     margin-left: 5px;
     z-index: 2;
 }
-.logo_hidden{
+
+.logo_hidden {
     display: none;
 }
+
 @keyframes showup_logo1 {
     from{transform: translateY(-500px);}
     to{transform: translateY(0px);}
 }
+
 @keyframes showup_logo2 {
-    from{transform: translateY(-100px);}
-    to{transform: translateY(0px);}
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
 }
-h1{
+
+h1 {
     font-family: 'Titulos';
     font-size: 100px;
     text-align: center;
     z-index: 2;
     margin: 20px;
 }
-p{
+
+p {
     font-family: 'Parrafos';
     font-size: 25px;
     z-index: 2;
@@ -122,7 +141,8 @@ p{
     width: 850px;
     margin-top: 35px;
 }
-#about{
+
+#about {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -134,12 +154,14 @@ p{
 .about_nav_hidden{
     margin-top: 100vh;
 }
+
 @keyframes about_showup {
-    from{
+    from {
         opacity: 0;
         font-size: 7px;
     }
-    to{
+
+    to {
         opacity: 100%;
         font-size: 20px;
     }
@@ -159,7 +181,81 @@ footer{
 footer h3{
     font-family: 'Titulos_2';
 }
-#backgroundsvg{
+
+#backgroundsvg {
     position: fixed;
     z-index: 1;
 }
+
+/*Contacto*/
+.sidebar-contact {
+    position: fixed;
+    top: 60%;
+    left: -350px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background: #00000060;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.sidebar-contact.active {
+    left: 0;
+}
+
+.sidebar-contact input,
+.sidebar-contact textarea {
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .5);
+    outline: none;
+}
+
+.sidebar-contact h2 {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.sidebar-contact textarea {
+    height: 60px;
+    resize: none;
+}
+
+.sidebar-contact input[type="submit"] {
+    background: var(--color3);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.toggle {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #00000060;
+    top: 0;
+    right: -48px;
+    line-height: 48px;
+}
+
+.toggle:before {
+    content: url("/resources/icons/email.svg");
+}
+
+.toggle.active:before {
+    font-family: 'Titulos';
+    content: 'X';
+    font-size: 20px;
+    color: #fff;
+}
+/*Contacto*/
