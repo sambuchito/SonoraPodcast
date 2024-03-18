@@ -40,6 +40,8 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: about_showup ease-out both;
+    animation-duration: 0.8s;
 }
 main>div{
     background-color: #00000040;
@@ -128,15 +130,6 @@ p{
     align-items: center;
     justify-items: center;
     width: 950px;
-    animation: about_showup ease-out both;
-    animation-duration: 0.8s;
-}
-@supports (animation-timeline: view()){
-    #about{
-        animation: about_showup ease-out both;
-        animation-timeline: view();
-        animation-range: entry 80% cover 70%; 
-    }
 }
 .about_nav_hidden{
     margin-top: 100vh;
