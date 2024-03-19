@@ -32,6 +32,7 @@ body {
     margin: 0;
     scrollbar-gutter: stable;
     background-image: url('../resources/fondo.svg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--color3);
@@ -193,7 +194,7 @@ h2{
     z-index: 2;
 }
 footer{
-    height: 80px;
+    height: 150px;
     background-color: #00000050;
     display: flex;
     flex-direction: row;
@@ -207,6 +208,20 @@ footer h3{
 #backgroundsvg {
     position: fixed;
     z-index: 1;
+}
+textarea, input {
+    all: unset;
+    background-color: #00000050;
+    border: rgba(0, 0, 0, 0.301) solid 3px;
+    border-radius: 10px;
+    font-family: 'Parrafos';
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 150px;
+    height: 25px;
+    z-index: 2;
+    transition: all 0.5s;
 }
 
 /*Contacto*/
