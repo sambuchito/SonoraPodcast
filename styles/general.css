@@ -4,6 +4,7 @@
     --color3: #46154B;
     --color4: #7A19B6;
     --color5: #472D85;
+    --color6: #ff76e6;
 }
 
 @font-face {
@@ -134,9 +135,27 @@ p {
     font-size: 25px;
     z-index: 2;
 }
+
+a{
+    all: unset;
+    color: var(--color6);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--color2);
+    transition: all 0.5s;
+}
+
+.highlight{
+    color: var(--color6);
+}
+
 #about p{
     width: 850px;
 }
+
 #about h1{
     width: 850px;
     margin-top: 35px;
