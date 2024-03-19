@@ -39,10 +39,6 @@
    margin-left: 5px;
  }
 
- .float-fb {
-   top: 350px;
- }
-
  .float-tw {
    top: 405px;
  }
@@ -57,6 +53,24 @@
 
  .float-spotify {
    top: 570px;
+ }
+
+ @supports (calc()) {
+   .float-tw {
+     top: calc(40% + 55px);
+   }
+
+   .float-ig {
+     top: calc(40% + 110px);
+   }
+
+   .float-yt {
+     top: calc(40% + 165px);
+   }
+
+   .float-spotify {
+     top: calc(40% + 220px);
+   }
  }
 
  /* bloque etiqueta negra  */

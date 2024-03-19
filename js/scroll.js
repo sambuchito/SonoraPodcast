@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar");
 const logo1 = document.getElementById("nav_logo1");
 const logo2 = document.getElementById("nav_logo2");
-const about = document.getElementById("video");
+const video = document.getElementById("video");
 
 let scrolled = false;
 window.onscroll = () => {
@@ -25,12 +25,12 @@ window.onscroll = () => {
             navbar.classList.add("nav_hidden");
             logo1.classList.add("logo_hidden");
             logo2.classList.remove("logo_hidden");
-            about.classList.add("about_nav_hidden");
+            video.classList.add("video_nav_hidden");
         }else{
             navbar.classList.remove("nav_hidden")
             logo1.classList.remove("logo_hidden")
             logo2.classList.add("logo_hidden")
-            about.classList.remove("about_nav_hidden");
+            video.classList.remove("video_nav_hidden");
         }
     }
     
