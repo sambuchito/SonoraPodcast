@@ -11,7 +11,7 @@ let scrolled = false;
 window.onscroll = () => {
     let last_scrolled = false;
     last_scrolled = scrolled;
-    if(window.outerWidth>550){
+    if(window.outerWidth>600){
         if (window.scrollY>=200){
             if (window.scrollY>380){
                 scrolled = true;
@@ -45,39 +45,24 @@ window.onscroll = () => {
             }
         }
     }else{
-        if (window.scrollY>=200){
-            if (window.scrollY>380){
-                scrolled = true;
-            }else{
-                scrolled = false;
-            }
+        if (window.scrollY>=300){
+            scrolled = true;
         }else{
-            if (window.scrollY>200){
-                scrolled = true;
-            }else{
-                scrolled = false;
-            }
+            scrolled = false;
         }
         if (last_scrolled!=scrolled){
             if (!navbar.classList.contains("nav_hidden")&&scrolled){
-                navbar.classList.add("nav_hidden");
                 date.classList.add("hide");
-                logo1.classList.add("logo_hidden");
-                logo2.classList.remove("logo_hidden");
-                video.classList.add("video_nav_hidden");
                 for(let i=0; i<floats.length; i++){floats[i].classList.remove("hide-fl");}
                 toggle.classList.remove("hide-toggle");
             }else{
-                navbar.classList.remove("nav_hidden");
                 date.classList.remove("hide");
-                logo1.classList.remove("logo_hidden");
-                logo2.classList.add("logo_hidden");
-                video.classList.remove("video_nav_hidden");
                 for(let i=0; i<floats.length; i++){floats[i].classList.add("hide-fl");}
                 toggle.classList.add("hide-toggle");
             }
         }
     }
+    
     if(window.scrollY>10){
         arrow.classList.add("hide");
     }else{

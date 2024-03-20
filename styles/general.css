@@ -68,7 +68,7 @@ main {
     background-color: var(--color4);
     padding: 50px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 2px #00000050;
@@ -181,6 +181,7 @@ nav {
     height: 100px;
     flex-direction: row;
     justify-content: left;
+    align-items: start;
     position: fixed;
     animation-name: showup_logo2;
     animation-duration: 0.5s;
@@ -258,7 +259,7 @@ a:hover {
 }
 
 #about p {
-    width: 900px;
+    max-width: 900px;
 }
 
 #about h1 {

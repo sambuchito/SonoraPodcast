@@ -52,25 +52,33 @@
 
 @media (max-width: 605px) {
   body {
-    max-width: 100vw;
+    max-width: 100svw;
     background-image: url('../resources/fondo-mobile.svg');
     background-color: var(--color9);
+    background-position: top;
+    background-size: cover;
   }
 
-  nav{
+  nav {
     height: 40svh;
   }
 
-  footer{
+  footer {
     max-width: 100svw;
     padding: 0 50px;
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  footer h3{
+    margin: 0 25px;
   }
 
   #nav_logo1 {
     height: unset;
-    width: 95%;
+    width: 85svw;
   }
 
   #date {
@@ -97,7 +105,9 @@
   #about,
   #carrousel,
   #cifespod {
-    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 90svw;
     padding: 20px;
     border-radius: 0;
   }
@@ -113,9 +123,13 @@
     height: 250px;
   }
 
-  #date h3{
+  #date h3 {
     font-size: 25px;
     margin: 15px;
+  }
+
+  #scrolldown {
+    display: none;
   }
 
   .container {
@@ -125,5 +139,57 @@
 
   .sidebar-contact {
     top: 87%;
+  }
+  
+  .float-tw {
+    top: 605px;
+  }
+  
+  .float-ig {
+    top: 660px;
+  }
+  
+  .float-yt {
+    top: 715px;
+  }
+  
+  .float-spotify {
+    top: 770px;
+  }
+  
+  @supports (calc()) {
+    .float-tw {
+      top: calc(60svh + 55px);
+    }
+  
+    .float-ig {
+      top: calc(60svh + 110px);
+    }
+  
+    .float-yt {
+      top: calc(60svh + 165px);
+    }
+  
+    .float-spotify {
+      top: calc(60svh + 220px);
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .float-tw {
+    top: 450px;
+  }
+  
+  .float-ig {
+    top: 505px;
+  }
+  
+  .float-yt {
+    top: 560px;
+  }
+  
+  .float-spotify {
+    top: 615px;
   }
 }
