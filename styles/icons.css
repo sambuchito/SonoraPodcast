@@ -5,6 +5,7 @@
    letter-spacing: 3px;
    padding: 4px;
    width: 150px;
+   height: 40px;
    position: fixed;
    right: -110px;
    z-index: 1000;
@@ -32,11 +33,9 @@
  }
 
  .fl-fl a {
-   color: #fff !important;
+   color: #fff;
    text-decoration: none;
    text-align: center;
-   line-height: 43px !important;
-   vertical-align: top !important;
    margin-left: 5px;
  }
 
