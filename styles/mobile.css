@@ -1,8 +1,6 @@
 @media (max-width: 1100px) {
   #nav_logo1 {
     height: 250px;
-    animation-name: showup_logo1;
-    animation-duration: 0.6s;
   }
 
   nav {
@@ -58,5 +56,70 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    width: 100vw;
+    height: 100svh;
+  }
+
+  nav{
+    height: 40svh;
+  }
+
+  #nav_logo1 {
+    height: unset;
+    width: 95%;
+  }
+
+  #date {
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #video,
+  #about,
+  #carrousel,
+  #cifespod {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  #about p,
+  #cifespod p,
+  #cifespod h2,
+  #carrousel h2 {
+    width: 90%;
+  }
+
+  #cifespod img {
+    height: 250px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-contact {
+    top: 90%;
   }
 }

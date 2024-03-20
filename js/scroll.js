@@ -11,6 +11,7 @@ let scrolled = false;
 window.onscroll = () => {
     let last_scrolled = false;
     last_scrolled = scrolled;
+    window.screenX
     if (window.scrollY>=200){
         if (window.scrollY>380){
             scrolled = true;

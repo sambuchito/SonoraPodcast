@@ -81,22 +81,22 @@ main {
     justify-content: center;
 }
 
-#cifespod{
+#cifespod {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#cifespod h3{
+#cifespod h3 {
     max-width: 900px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:start;
+    align-items: start;
     max-width: 900px;
 }
 
@@ -124,7 +124,7 @@ nav {
     z-index: 2;
 }
 
-#scrolldown{
+#scrolldown {
     all: unset;
     text-align: center;
     font-family: 'Titulos';
@@ -139,7 +139,7 @@ nav {
     transition: all 0.6s;
 }
 
-#scrolldown:hover{
+#scrolldown:hover {
     background-color: #00000050;
     transition: all 0.6s;
 }
@@ -147,7 +147,6 @@ nav {
 /**/
 #date {
     width: 100%;
-    height: auto;
     position: fixed;
     top: 0;
 }
@@ -176,7 +175,7 @@ nav {
 }
 
 .hide {
-    display: none!important;
+    display: none !important;
 }
 
 .nav_hidden {
@@ -207,6 +206,7 @@ nav {
 .logo_hidden {
     display: none;
 }
+
 /* No anda bien
 @keyframes showup_logo1 {
     from {
@@ -286,9 +286,10 @@ h3 {
     height: 40px;
 }
 
-h2{
+h2 {
     font-family: 'Titulos_2';
     font-size: 35px;
+    text-align: center;
 }
 
 footer {
