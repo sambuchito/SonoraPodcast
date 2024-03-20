@@ -9,11 +9,6 @@
     justify-content: center;
   }
 
-  iframe {
-    width: 90%;
-    aspect-ratio: 16/9;
-  }
-
   #nav_logo1 {
     margin-left: 15px;
   }

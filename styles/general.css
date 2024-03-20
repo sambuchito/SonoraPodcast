@@ -101,7 +101,8 @@ main {
 }
 
 iframe {
-    width: 900px;
+    width: 90%;
+    max-width: 900px;
     aspect-ratio: 16/9;
 }
 
