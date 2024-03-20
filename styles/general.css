@@ -1,6 +1,6 @@
 :root {
     /* Paleta 1*/
-    --color4: #9D2972aa;
+    --color4: #9D2972cc;
     --color2: #C22FA7;
     --color3: #5d1c64;
     --color1: #7A19B6;
@@ -14,6 +14,7 @@
     --color9: #6EC1E4;
     --color10: #142f48;
     --color11: #f5c1f0;
+    --color12: #9D2972;
 }
 
 @font-face {
@@ -70,6 +71,7 @@ main {
     max-width: 1200px;
     border-radius: 20px;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 2px #00000050;
 }
 
 #video {
@@ -82,8 +84,13 @@ main {
 
 #cifespod{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#cifespod h3{
+    max-width: 900px;
 }
 
 .container{
@@ -147,7 +154,6 @@ nav {
 }
 
 #date h3 {
-    font-family: 'Titulos_2';
     font-size: 50px;
     margin: 25px;
     filter: drop-shadow(3px 3px 1px #00000050);
@@ -280,6 +286,11 @@ h2 {
     z-index: 2;
 }
 
+h3{
+    font-family: 'Titulos_2';
+    font-size: 35px;
+}
+
 footer {
     height: 150px;
     background-color: var(--color4);
@@ -313,83 +324,3 @@ input {
     z-index: 2;
     transition: all 0.5s;
 }
-
-/*Contacto*/
-.sidebar-contact {
-    position: fixed;
-    top: 60%;
-    left: -350px;
-    transform: translateY(-50%);
-    width: 350px;
-    height: auto;
-    padding: 40px;
-    background: var(--color4);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
-    box-sizing: border-box;
-    transition: 0.5s;
-    z-index: 10;
-}
-
-.sidebar-contact.active {
-    left: 0;
-}
-
-.sidebar-contact input,
-.sidebar-contact textarea {
-    width: 100%;
-    height: 36px;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, .5);
-    outline: none;
-}
-
-.sidebar-contact h2 {
-    margin: 0 0 20px;
-    padding: 0;
-}
-
-.sidebar-contact textarea {
-    height: 60px;
-    resize: none;
-}
-
-.sidebar-contact input[type="submit"] {
-    background: var(--color3);
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-}
-
-.toggle {
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    text-align: center;
-    cursor: pointer;
-    background: var(--color4);
-    top: 0;
-    right: -48px;
-    line-height: 48px;
-    transition: all 0.5s;
-}
-
-.hide-toggle {
-    right: 0;
-    transition: all 0.5s;
-}
-
-.toggle:before {
-    content: url("/resources/icons/email.svg");
-}
-
-.toggle.active:before {
-    font-family: 'Titulos';
-    content: 'X';
-    font-size: 20px;
-    color: #fff;
-}
-
-/*Contacto*/
