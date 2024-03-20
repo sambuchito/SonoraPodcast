@@ -1,10 +1,19 @@
 :root {
-    --color1: #9D2972;
+    /* Paleta 1*/
+    --color4: #9D2972aa;
     --color2: #C22FA7;
-    --color3: #46154B;
-    --color4: #7A19B6;
+    --color3: #5d1c64;
+    --color1: #7A19B6;
     --color5: #472D85;
-    --color6: #ff76e6;
+    --color6: #ff76e6aa;
+
+
+    /* Paleta 2 */
+    --color7: #4c44cf;
+    --color8: #e953da;
+    --color9: #6EC1E4;
+    --color10: #142f48;
+    --color11: #f5c1f0;
 }
 
 @font-face {
@@ -31,11 +40,11 @@ body {
     color: white;
     margin: 0;
     scrollbar-gutter: stable;
-    background-image: url('../resources/fondo.svg');
+    background-image: url('../resources/fondo2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--color3);
+    background-color: var(--color9);
     background-attachment: fixed;
 }
 
@@ -49,16 +58,18 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    animation: about_showup ease-out both;
-    animation-duration: 0.8s;
 }
-#video,#about,#carrousel{
-    background-color: #00000040;
+
+#video,
+#about,
+#carrousel {
+    background-color: var(--color4);
     padding: 50px;
     width: 80%;
     max-width: 1200px;
 }
-#video{
+
+#video {
     border-radius: 25px 25px 0 0;
     height: 500px;
     display: flex;
@@ -66,7 +77,13 @@ main {
     align-items: center;
     justify-content: center;
 }
-#carrousel{
+
+iframe {
+    width: 900px;
+    aspect-ratio: 16/9;
+}
+
+#carrousel {
     border-radius: 0 0 25px 25px;
     display: flex;
     flex-direction: column;
@@ -75,31 +92,59 @@ main {
     margin-bottom: 10vh;
 }
 
-.hide{
-    display: none;
-}
-
 nav {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: transparent;
-    z-index: 10;
+    z-index: 2;
+}
+/**/
+#date{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+#date h3{
+    font-family: 'Titulos_2';
+    font-size: 50px;
+    margin: 25px;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: showdate 1s ease;
+}
+
+@keyframes showdate {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.hide{
+    display: none;
 }
 
 .nav_hidden {
     height: 100px;
+    flex-direction: row;
     justify-content: left;
     position: fixed;
     animation-name: showup_logo2;
     animation-duration: 0.5s;
 }
-#nav_logo1{
+
+#nav_logo1 {
     height: 400px;
+    margin-top: 200px;
     animation-name: showup_logo1;
-    animation-duration: 0.9s;
+    animation-duration: 1s;
     z-index: 2;
 }
 
@@ -114,8 +159,13 @@ nav {
 }
 
 @keyframes showup_logo1 {
-    from{transform: translateY(-500px);}
-    to{transform: translateY(0px);}
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
 }
 
 @keyframes showup_logo2 {
@@ -142,27 +192,27 @@ p {
     z-index: 2;
 }
 
-a{
+a {
     all: unset;
     color: var(--color6);
     cursor: pointer;
     transition: all 0.5s;
 }
-a:hover{
-    text-decoration: underline;
-    color: var(--color2);
+
+a:hover {
+    color: var(--color9);
     transition: all 0.5s;
 }
 
-.highlight{
+.highlight {
     color: var(--color6);
 }
 
-#about p{
+#about p {
     width: 900px;
 }
 
-#about h1{
+#about h1 {
     width: 900px;
     margin-top: 35px;
 }
@@ -175,34 +225,26 @@ a:hover{
     align-items: center;
     justify-items: center;
 }
-.video_nav_hidden{
+
+.video_nav_hidden {
     margin-top: 100vh;
 }
 
-@keyframes about_showup {
-    from {
-        opacity: 0;
-        font-size: 7px;
-    }
-
-    to {
-        opacity: 100%;
-        font-size: 20px;
-    }
-}
-h2{
+h2 {
     font-family: 'Titulos';
     z-index: 2;
 }
-footer{
+
+footer {
     height: 150px;
-    background-color: #00000050;
+    background-color: var(--color4);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-footer h3{
+
+footer h3 {
     font-family: 'Titulos_2';
 }
 
@@ -210,7 +252,9 @@ footer h3{
     position: fixed;
     z-index: 1;
 }
-textarea, input {
+
+textarea,
+input {
     all: unset;
     background-color: #00000050;
     border: rgba(0, 0, 0, 0.301) solid 3px;
@@ -234,7 +278,7 @@ textarea, input {
     width: 350px;
     height: auto;
     padding: 40px;
-    background: #00000060;
+    background: var(--color4);
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
     box-sizing: border-box;
     transition: 0.5s;
@@ -280,10 +324,16 @@ textarea, input {
     width: 48px;
     text-align: center;
     cursor: pointer;
-    background: #00000060;
+    background: var(--color4);
     top: 0;
     right: -48px;
     line-height: 48px;
+    transition: all 0.5s;
+}
+
+.hide-toggle {
+    right: 0;
+    transition: all 0.5s;
 }
 
 .toggle:before {
@@ -296,4 +346,5 @@ textarea, input {
     font-size: 20px;
     color: #fff;
 }
+
 /*Contacto*/

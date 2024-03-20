@@ -1,6 +1,6 @@
  /* bloque etiqueta negra  */
  .fl-fl {
-   background: #00000060;
+   background: var(--color4);
    text-transform: uppercase;
    letter-spacing: 3px;
    padding: 4px;
@@ -37,6 +37,10 @@
    line-height: 43px !important;
    vertical-align: top !important;
    margin-left: 5px;
+ }
+
+ .hide-fl{
+  right: -160px;
  }
 
  .float-tw {
