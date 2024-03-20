@@ -5,6 +5,7 @@ const video = document.getElementById("video");
 const floats = document.getElementsByClassName("fl-fl");
 const toggle = document.getElementById("togglebtn");
 const date = document.getElementById("date");
+const arrow = document.getElementById("scrolldown");
 
 let scrolled = false;
 window.onscroll = () => {
@@ -42,5 +43,14 @@ window.onscroll = () => {
             toggle.classList.add("hide-toggle");
         }
     }
-    
+    if(window.scrollY>10){
+        arrow.classList.add("hide");
+    }else{
+        arrow.classList.remove("hide");
+    }
 }
+
+arrow.addEventListener("click", ()=>{
+    arrow.classList.add("hide");
+    video.scrollIntoView({behavior: "smooth"});
+});

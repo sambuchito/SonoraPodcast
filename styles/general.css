@@ -62,20 +62,36 @@ main {
 
 #video,
 #about,
-#carrousel {
+#carrousel,
+#cifespod {
     background-color: var(--color4);
     padding: 50px;
     width: 80%;
     max-width: 1200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 #video {
-    border-radius: 25px 25px 0 0;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#cifespod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:start;
+    max-width: 900px;
 }
 
 iframe {
@@ -84,7 +100,6 @@ iframe {
 }
 
 #carrousel {
-    border-radius: 0 0 25px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,21 +117,43 @@ nav {
     background-color: transparent;
     z-index: 2;
 }
+
+#scrolldown{
+    all: unset;
+    text-align: center;
+    font-family: 'Titulos';
+    font-size: 50px;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#scrolldown:hover{
+    background-color: #00000050;
+    transition: all 0.6s;
+}
+
 /**/
-#date{
+#date {
     width: 100%;
     height: auto;
     position: fixed;
     top: 0;
 }
 
-#date h3{
+#date h3 {
     font-family: 'Titulos_2';
     font-size: 50px;
     margin: 25px;
+    filter: drop-shadow(3px 3px 1px #00000050);
 }
 
-.date{
+.date {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,11 +161,17 @@ nav {
 }
 
 @keyframes showdate {
-    from{opacity: 0;}
-    to{opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-.hide{
-    display: none;
+
+.hide {
+    display: none!important;
 }
 
 .nav_hidden {
@@ -142,9 +185,10 @@ nav {
 
 #nav_logo1 {
     height: 400px;
-    margin-top: 200px;
-    animation-name: showup_logo1;
-    animation-duration: 1s;
+    margin-top: 10%;
+    filter: drop-shadow(5px 5px 1px #00000050);
+    /*animation-name: showup_logo1;
+    animation-duration: 1s;*/
     z-index: 2;
 }
 
@@ -152,12 +196,13 @@ nav {
     height: 100px;
     margin-left: 5px;
     z-index: 2;
+    filter: drop-shadow(2px 2px 1px #00000050);
 }
 
 .logo_hidden {
     display: none;
 }
-
+/* No anda bien
 @keyframes showup_logo1 {
     from {
         transform: translateY(100vh);
@@ -167,7 +212,7 @@ nav {
         transform: translateY(0px);
     }
 }
-
+*/
 @keyframes showup_logo2 {
     from {
         transform: translateY(-100px);
