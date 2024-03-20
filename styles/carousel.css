@@ -27,7 +27,8 @@
 
 .pic-ctn {
     position: relative;
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     height: 300px;
 }
 

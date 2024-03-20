@@ -7,20 +7,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: transparent;
   }
 
   iframe {
     width: 90%;
     aspect-ratio: 16/9;
-  }
-
-  #about p {
-    width: 585px;
-  }
-
-  #about h1 {
-    width: 585px;
   }
 
   #nav_logo1 {
@@ -59,14 +50,22 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 605px) {
   body {
-    width: 100vw;
-    height: 100svh;
+    max-width: 100vw;
+    background-image: url('../resources/fondo-mobile.svg');
+    background-color: var(--color9);
   }
 
   nav{
     height: 40svh;
+  }
+
+  footer{
+    max-width: 100svw;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #nav_logo1 {
@@ -114,12 +113,17 @@
     height: 250px;
   }
 
+  #date h3{
+    font-size: 25px;
+    margin: 15px;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
   }
 
   .sidebar-contact {
-    top: 90%;
+    top: 87%;
   }
 }
