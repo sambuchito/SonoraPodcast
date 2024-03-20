@@ -68,7 +68,7 @@
 }
 
 .toggle:before {
-    content: url("./resources/icons/email.svg");
+    content: url("../resources/icons/email.svg");
 }
 
 .toggle.active:before {
