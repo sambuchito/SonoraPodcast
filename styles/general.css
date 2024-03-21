@@ -269,6 +269,11 @@ a:hover {
     margin-top: 35px;
 }
 
+#about h3{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
 #about {
     height: 100%;
     display: flex;
