@@ -40,11 +40,17 @@
 }
 
 .sidebar-contact input[type="submit"] {
-    background: var(--color3);
+    text-align: center;
+    background: #00000050;
     color: #fff;
     cursor: pointer;
     border: none;
     font-size: 18px;
+    transition: all 0.5s;
+}
+.sidebar-contact input[type="submit"]:hover{
+    background: var(--color3);
+    transition: all 0.5s;
 }
 
 .toggle {
