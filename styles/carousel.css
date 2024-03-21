@@ -1,6 +1,6 @@
 @keyframes display {
     0% {
-        transform: translateX(200px);
+        transform: translateX(100%);
         opacity: 0;
     }
 
@@ -15,12 +15,12 @@
     }
 
     30% {
-        transform: translateX(-200px);
+        transform: translateX(-100%);
         opacity: 0;
     }
 
     100% {
-        transform: translateX(-200px);
+        transform: translateX(-100%);
         opacity: 0;
     }
 }
@@ -30,12 +30,15 @@
     width: 90%;
     max-width: 800px;
     height: 300px;
+    overflow: hidden;
 }
 
 .pic-ctn>img {
     position: absolute;
     top: 0;
-    left: calc(50% - 100px);
+    left: 25%;/*calc(50% - 100px);*/
+    aspect-ratio: 16/9;
+    width: 50%;
     opacity: 0;
     animation: display 15s infinite;
 }
