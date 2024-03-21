@@ -41,6 +41,7 @@
     width: 50%;
     opacity: 0;
     animation: display 15s infinite;
+    border-radius: 10px;
 }
 
 img:nth-child(2) {
