@@ -47,6 +47,7 @@
     border: none;
     font-size: 18px;
     transition: all 0.5s;
+    outline: #00000070 solid 2px;
 }
 .sidebar-contact input[type="submit"]:hover{
     background: var(--color3);

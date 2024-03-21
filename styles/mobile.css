@@ -26,6 +26,13 @@
     left: -100%;
   }
 
+  .sidebar-contact.active form{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+  }
+
   .sidebar-contact .toggle {
     top: 50%;
     transform: translateY(-50%);
@@ -108,10 +115,15 @@
   }
 
   #about p,
+  #about h3,
   #cifespod p,
   #cifespod h2,
   #carrousel h2 {
     width: 90%;
+  }
+
+  #about h3{
+    height: auto;
   }
 
   #cifespod img {
