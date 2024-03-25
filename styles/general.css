@@ -87,7 +87,7 @@ main {
     box-shadow: 5px 5px 2px #00000050;
 }
 
-#video {
+#video, #playlist {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +253,7 @@ h1 {
 p {
     font-family: 'Parrafos';
     font-size: 25px;
-    z-index: 2;
+    
 }
 
 a {
