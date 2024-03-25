@@ -33,6 +33,11 @@
     src: url('../resources/Garet-Book.ttf');
 }
 
+@font-face {
+    font-family: 'Negrita';
+    src: url('../resources/TOMMY\ Regular.otf');
+}
+
 html {
     all: unset;
 }
