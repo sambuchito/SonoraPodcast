@@ -29,6 +29,11 @@
 }
 
 @font-face {
+    font-family: 'Titulos-b';
+    src: url('../resources/CODE\ Bold.otf');
+}
+
+@font-face {
     font-family: 'Parrafos';
     src: url('../resources/Garet-Book.ttf');
 }
@@ -47,7 +52,7 @@ body {
     color: white;
     margin: 0;
     scrollbar-gutter: stable;
-    background-image: url('../resources/fondo-desktop.svg');
+    background-image: url('../resources/fondo-p2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +164,7 @@ nav {
 }
 
 #date h3 {
+    font-family: 'Titulos-b';
     font-size: 50px;
     margin: 25px;
     filter: drop-shadow(3px 3px 1px #00000050);
@@ -365,8 +371,15 @@ footer p {
     letter-spacing: 5px;
 }
 
+footer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Negrita';
+}
+
 .footer_logo {
-    height: 50px;
+    height: 45px;
     z-index: 2;
     background-color: var(--color5);
     display: flex;
