@@ -74,6 +74,7 @@ main {
 #playlist {
     background-color: var(--color4);
     padding: 50px;
+    padding-top: 10px;
     width: 80%;
     max-width: 900px;
     border-radius: 20px;
@@ -118,7 +119,6 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
 }
 
 nav {
@@ -277,7 +277,7 @@ a:hover {
     font-size: 70px;
 }
 
-#about h3{
+#about h3 {
     font-size: 30px;
     margin-bottom: 0;
 }
@@ -307,18 +307,76 @@ h2 {
     text-align: center;
 }
 
-footer {
-    height: 150px;
+#sponsors {
+    width: 100%;
+    height: auto;
     background-color: var(--color4);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sponsors img{
+    height: 150px;
+    filter:contrast(0%);
+}
+
+.container-sp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 150px;
+    grid-template-areas: 
+    "head head head"
+    "logo1 logo2 logo3" ;
+}
+
+.head{
+    grid-area: head;
+    text-align: center;
+}
+
+.logo1{
+    grid-area: logo1;
+}
+
+.logo2{
+    grid-area: logo2;
+}
+
+.logo3{
+    grid-area: logo3;
+}
+
+footer {
+    height: 60px;
+    background-color: var(--color5);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 20%;
+
 }
 
-footer h3 {
+footer p {
     font-family: 'Titulos_2';
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.footer_logo {
+    height: 50px;
+    z-index: 2;
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_logo img {
+    margin-right: 5px;
 }
 
 #backgroundsvg {
@@ -342,6 +400,6 @@ input {
     transition: all 0.5s;
 }
 
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
     display: none;
 }
