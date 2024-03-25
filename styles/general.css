@@ -70,7 +70,8 @@ main {
 #video,
 #about,
 #carrousel,
-#cifespod {
+#cifespod,
+#playlist {
     background-color: var(--color4);
     padding: 50px;
     width: 80%;
