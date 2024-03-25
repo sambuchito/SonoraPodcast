@@ -248,12 +248,13 @@ h1 {
     text-align: center;
     z-index: 2;
     margin: 20px;
+    letter-spacing: 3px;
 }
 
 p {
     font-family: 'Parrafos';
     font-size: 25px;
-    
+    letter-spacing: 1px;
 }
 
 a {
@@ -305,12 +306,14 @@ h3 {
     font-family: 'Titulos';
     font-size: 25px;
     height: 40px;
+    letter-spacing: 3px;
 }
 
 h2 {
     font-family: 'Titulos_2';
     font-size: 35px;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 #sponsors {
