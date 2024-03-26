@@ -28,7 +28,7 @@ window.onscroll = () => {
         if (last_scrolled!=scrolled){
             if (!navbar.classList.contains("nav_hidden")&&scrolled){
                 navbar.classList.add("nav_hidden");
-                date.classList.add("hide");
+                date.classList.add("hide_date");
                 logo1.classList.add("logo_hidden");
                 logo2.classList.remove("logo_hidden");
                 video.classList.add("video_nav_hidden");
@@ -36,7 +36,7 @@ window.onscroll = () => {
                 toggle.classList.remove("hide-toggle");
             }else{
                 navbar.classList.remove("nav_hidden");
-                date.classList.remove("hide");
+                date.classList.remove("hide_date");
                 logo1.classList.remove("logo_hidden");
                 logo2.classList.add("logo_hidden");
                 video.classList.remove("video_nav_hidden");
