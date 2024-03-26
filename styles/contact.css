@@ -1,9 +1,8 @@
 /*Contacto*/
 .sidebar-contact {
     position: fixed;
-    top: 555px;
+    top: 405px;
     left: -350px;
-    transform: translateY(-50%);
     width: 350px;
     height: auto;
     padding: 40px;
@@ -16,7 +15,7 @@
 
 @supports (calc()) {
     .sidebar-contact {
-      top: calc(40% + 205px);
+      top: calc(40% + 55px);
     }
 }
 .sidebar-contact.active {

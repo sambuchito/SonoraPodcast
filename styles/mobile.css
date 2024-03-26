@@ -39,9 +39,8 @@
   }
 
   .sidebar-contact .toggle {
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.5s;
+    top: 0;
+    transition: all 0.5s;
   }
 
   .sidebar-contact.active .toggle {
@@ -57,7 +56,7 @@
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 650px) {
   body {
     max-width: 100svw;
     background-image: url('../resources/f1-m.svg');
@@ -68,6 +67,10 @@
 
   nav {
     height: 40svh;
+  }
+
+  .nav_hidden {
+    display: none;
   }
 
   footer {
@@ -158,7 +161,7 @@
   }
 
   .sidebar-contact {
-    top: 755px;
+    top: 605px;
   }
   
   .float-tw {
@@ -179,7 +182,7 @@
   
   @supports (calc()) {
     .sidebar-contact {
-      top: calc(60svh + 205px);
+      top: calc(60svh + 55px);
     }
 
     .float-tw {
@@ -202,7 +205,7 @@
 
 @media (max-width: 390px){
   .sidebar-contact {
-    top: 600px;
+    top: 450px;
   }
 
   .float-tw {
