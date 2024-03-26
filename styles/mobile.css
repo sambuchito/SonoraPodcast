@@ -56,10 +56,10 @@
 @media (max-width: 605px) {
   body {
     max-width: 100svw;
-    background-image: url('../resources/fondo-mobile.svg');
+    background-image: url('../resources/f1-m.svg');
     background-color: var(--color9);
     background-position: top;
-    background-size: cover;
+    background-size: 100vh;
   }
 
   nav {
