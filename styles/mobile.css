@@ -21,6 +21,10 @@
     width: 100%;
   }
 
+  #sponsors img{
+    height: 25svw;
+  }
+
   .sidebar-contact {
     width: 100%;
     height: 100%;
