@@ -112,10 +112,16 @@
   #about,
   #carrousel,
   #cifespod,
-  #playlist,
-  #sponsors {
+  #playlist {
     margin: 0;
     margin-bottom: 20px;
+    max-width: 90svw;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  #sponsors{
+    margin: 0;
     max-width: 90svw;
     padding: 20px;
     border-radius: 0;
