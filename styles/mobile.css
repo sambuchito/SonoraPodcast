@@ -71,8 +71,7 @@
     padding: 0 50px;
     padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   footer h3{
@@ -107,7 +106,9 @@
   #video,
   #about,
   #carrousel,
-  #cifespod {
+  #cifespod,
+  #playlist,
+  #sponsors {
     margin: 0;
     margin-bottom: 20px;
     max-width: 90svw;
@@ -146,7 +147,7 @@
   }
 
   .sidebar-contact {
-    top: 87%;
+    top: 755px;
   }
   
   .float-tw {
@@ -166,6 +167,10 @@
   }
   
   @supports (calc()) {
+    .sidebar-contact {
+      top: calc(60svh + 205px);
+    }
+
     .float-tw {
       top: calc(60svh + 55px);
     }
@@ -185,6 +190,10 @@
 }
 
 @media (max-width: 390px){
+  .sidebar-contact {
+    top: 600px;
+  }
+
   .float-tw {
     top: 450px;
   }
