@@ -163,6 +163,9 @@
   .sidebar-contact {
     top: 605px;
   }
+  .sidebar-contact.active {
+    top: 305px;
+  }
   
   .float-tw {
     top: 605px;
