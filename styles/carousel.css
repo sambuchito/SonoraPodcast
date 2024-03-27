@@ -29,16 +29,18 @@
     position: relative;
     width: 90%;
     max-width: 800px;
-    height: 300px;
+    min-height: 380px;
+    height: 20svw;
     overflow: hidden;
 }
 
 .pic-ctn>img {
     position: absolute;
     top: 0;
-    left: 25%;/*calc(50% - 100px);*/
+    left: 10%;/*calc(50% - 100px);*/
     aspect-ratio: 16/9;
-    width: 50%;
+    width: 80%;
+    max-width: 700px;
     opacity: 0;
     animation: display 15s infinite;
     border-radius: 10px;

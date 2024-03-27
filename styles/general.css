@@ -125,6 +125,8 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 500px;
+    height: 25svw;
 }
 
 nav {
@@ -337,10 +339,9 @@ h2 {
     height: auto;
     background-color: var(--color14);
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    gap: 150px;
     padding-bottom: 25px;
 }
 

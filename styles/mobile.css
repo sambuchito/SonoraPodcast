@@ -21,6 +21,11 @@
     width: 100%;
   }
 
+  #sponsors{
+    flex-direction: column;
+    gap: 0;
+  }
+
   #sponsors img{
     height: 25svw;
   }
@@ -149,6 +154,10 @@
   #date h3 {
     font-size: 25px;
     margin: 15px;
+  }
+
+  #carrousel{
+    height: 30svh;
   }
 
   #scrolldown {
