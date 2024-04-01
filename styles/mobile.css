@@ -1,27 +1,12 @@
 @media (max-width: 1100px) {
   #nav_logo1 {
     height: 250px;
-    animation-name: showup_logo1;
-    animation-duration: 0.6s;
   }
 
   nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: transparent;
-  }
-
-  iframe {
-    width: 90%;
-  }
-
-  #about p {
-    width: 585px;
-  }
-
-  #about h1 {
-    width: 585px;
   }
 
   #nav_logo1 {
@@ -30,8 +15,19 @@
 
   #video,
   #about,
-  #carrousel {
+  #carrousel,
+  #cifespod,
+  #playlist {
     width: 100%;
+  }
+
+  #sponsors{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #sponsors img{
+    height: 20svw;
   }
 
   .sidebar-contact {
@@ -40,10 +36,16 @@
     left: -100%;
   }
 
+  .sidebar-contact.active form{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+  }
+
   .sidebar-contact .toggle {
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.5s;
+    top: 0;
+    transition: all 0.5s;
   }
 
   .sidebar-contact.active .toggle {
@@ -56,5 +58,179 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    max-width: 100svw;
+    background-image: url('../resources/f1-m.svg');
+    background-color: var(--color9);
+    background-position: top;
+    background-size: 100vh;
+  }
+
+  nav {
+    height: 30svh;
+  }
+
+  .nav_hidden {
+    display: none;
+  }
+
+  footer {
+    max-width: 100svw;
+    padding: 0 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+  }
+
+  footer h3{
+    margin: 0 25px;
+  }
+
+  #nav_logo1 {
+    height: unset;
+    width: 85svw;
+  }
+
+  #date {
+    width: 100vw;
+  }
+  .date{
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #video,
+  #about,
+  #carrousel,
+  #cifespod,
+  #playlist {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  #sponsors{
+    margin: 0;
+    max-width: 90svw;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  #about p,
+  #about h3,
+  #cifespod p,
+  #cifespod h2,
+  #carrousel h2 {
+    width: 90%;
+  }
+
+  #about h3{
+    height: auto;
+  }
+
+  #cifespod img {
+    height: 250px;
+  }
+
+  #date h3 {
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  #scrolldown {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-contact {
+    top: 605px;
+  }
+  .sidebar-contact.active {
+    top: 305px;
+  }
+  
+  .float-tw {
+    top: 605px;
+  }
+  
+  .float-ig {
+    top: 660px;
+  }
+  
+  .float-yt {
+    top: 715px;
+  }
+  
+  .float-spotify {
+    top: 770px;
+  }
+  
+  @supports (calc()) {
+    .sidebar-contact {
+      top: calc(60svh + 55px);
+    }
+
+    .float-tw {
+      top: calc(60svh + 55px);
+    }
+  
+    .float-ig {
+      top: calc(60svh + 110px);
+    }
+  
+    .float-yt {
+      top: calc(60svh + 165px);
+    }
+  
+    .float-spotify {
+      top: calc(60svh + 220px);
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .sidebar-contact {
+    top: 450px;
+  }
+
+  .float-tw {
+    top: 450px;
+  }
+  
+  .float-ig {
+    top: 505px;
+  }
+  
+  .float-yt {
+    top: 560px;
+  }
+  
+  .float-spotify {
+    top: 615px;
   }
 }
