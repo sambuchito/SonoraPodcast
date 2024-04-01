@@ -123,7 +123,6 @@
   #playlist {
     margin: 0;
     margin-bottom: 20px;
-    max-width: 90svw;
     padding: 20px;
     border-radius: 0;
   }
@@ -154,10 +153,6 @@
   #date h3 {
     font-size: 25px;
     margin: 15px;
-  }
-
-  #carrousel{
-    max-height: 30svh;
   }
 
   #scrolldown {

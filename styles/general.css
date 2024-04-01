@@ -86,6 +86,7 @@ main {
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 2px #00000050;
+    box-sizing: border-box;
 }
 
 #video, #playlist {
@@ -124,9 +125,8 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 500px;
-    height: 25svw;
+    justify-content: start;
+    height: fit-content;
 }
 
 nav {
