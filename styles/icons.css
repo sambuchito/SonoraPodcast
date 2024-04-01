@@ -46,6 +46,7 @@
 .float-sm{
   position: fixed;
   top: 0;
+  z-index: 99;
 }
 
 .hide-fl {

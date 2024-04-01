@@ -27,7 +27,7 @@
   }
 
   #sponsors img{
-    height: 25svw;
+    height: 20svw;
   }
 
   .sidebar-contact {
@@ -71,7 +71,7 @@
   }
 
   nav {
-    height: 40svh;
+    height: 30svh;
   }
 
   .nav_hidden {
@@ -98,6 +98,9 @@
 
   #date {
     width: 100vw;
+  }
+  .date{
+    justify-content: center;
   }
 
   h1 {

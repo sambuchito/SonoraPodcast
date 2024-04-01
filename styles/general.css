@@ -348,6 +348,7 @@ h2 {
 #sponsors img{
     height: 150px;
     filter:contrast(0%);
+    margin: auto;
 }
 
 .container-sp{
