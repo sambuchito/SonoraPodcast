@@ -157,7 +157,7 @@
   }
 
   #carrousel{
-    height: 30svh;
+    max-height: 30svh;
   }
 
   #scrolldown {
