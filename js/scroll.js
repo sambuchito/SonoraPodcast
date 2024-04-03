@@ -12,14 +12,14 @@ window.onscroll = () => {
     let last_scrolled = false;
     last_scrolled = scrolled;
     if(window.outerWidth>600){
-        if (window.scrollY>=200){
-            if (window.scrollY>380){
+        if (window.scrollY>=window.innerHeight/4){
+            if (window.scrollY>window.innerHeight*3/4){
                 scrolled = true;
             }else{
                 scrolled = false;
             }
         }else{
-            if (window.scrollY>200){
+            if (window.scrollY>window.innerHeight/4){
                 scrolled = true;
             }else{
                 scrolled = false;
