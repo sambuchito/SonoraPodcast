@@ -64,11 +64,12 @@
 @media (max-width: 650px) {
   body {
     max-width: 100svw;
-    background-image: url('../resources/f1-m.svg');
+    background-image: url('../resources/f1-mobile.svg');
     background-color: var(--color9);
-    background-position: top;
-    background-size: 100vh;
+    background-position: center top;
+    background-size: cover;
   }
+    
 
   nav {
     height: 30svh;
