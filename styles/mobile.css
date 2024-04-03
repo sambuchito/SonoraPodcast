@@ -1,6 +1,29 @@
+@media (max-width: 1366px) {
+  .sidebar-contact {
+    top: 35%;
+  }
+
+  .float-tw {
+    top: 35%;
+  }
+  
+  .float-ig {
+    top: calc(35% + 55px);
+  }
+  
+  .float-yt {
+    top: calc(35% + 110px);
+  }
+  
+  .float-spotify {
+    top: calc(35% + 165px);
+  }
+}
+
 @media (max-width: 1100px) {
   #nav_logo1 {
-    height: 250px;
+    height: auto;
+    width: 100%;
   }
 
   nav {
@@ -35,6 +58,9 @@
     height: 100%;
     left: -100%;
   }
+  .sidebar-contact.active{
+    top: 15%;
+  }
 
   .sidebar-contact.active form{
     position: absolute;
@@ -52,6 +78,7 @@
     top: 0;
     right: 0;
     transform: translateY(0);
+    box-shadow: 0px 0px transparent;
   }
 
   .scroll {
@@ -67,12 +94,11 @@
     background-image: url('../resources/f1-mobile.svg');
     background-color: var(--color9);
     background-position: center top;
-    background-size: cover;
+    background-size: cover cover;
   }
-    
 
   nav {
-    height: 30svh;
+    height: 100svh;
   }
 
   .nav_hidden {
@@ -168,70 +194,33 @@
     align-items: center;
   }
 
-  .sidebar-contact {
-    top: 605px;
-  }
   .sidebar-contact.active {
     top: 305px;
   }
   
-  .float-tw {
-    top: 605px;
-  }
-  
-  .float-ig {
-    top: 660px;
-  }
-  
-  .float-yt {
-    top: 715px;
-  }
-  
-  .float-spotify {
-    top: 770px;
-  }
-  
-  @supports (calc()) {
-    .sidebar-contact {
-      top: calc(60svh + 55px);
-    }
-
-    .float-tw {
-      top: calc(60svh + 55px);
-    }
-  
-    .float-ig {
-      top: calc(60svh + 110px);
-    }
-  
-    .float-yt {
-      top: calc(60svh + 165px);
-    }
-  
-    .float-spotify {
-      top: calc(60svh + 220px);
-    }
-  }
-}
-
-@media (max-width: 390px){
   .sidebar-contact {
-    top: 450px;
+    top: 50%;
   }
 
   .float-tw {
-    top: 450px;
+    top: 50%;
   }
   
   .float-ig {
-    top: 505px;
+    top: calc(50% + 55px);
   }
   
   .float-yt {
-    top: 560px;
+    top: calc(50% + 110px);
   }
   
   .float-spotify {
-    top: 615px;
+    top: calc(50% + 165px);
   }
+
+  /*Provisional*/
+  .logo2{
+    width: 50svw;
+  }
+  /*-----------*/
 }

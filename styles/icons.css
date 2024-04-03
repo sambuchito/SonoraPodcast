@@ -54,37 +54,19 @@
 }
 
 .float-tw {
-  top: 405px;
+  top: calc(40% + 55px);
 }
 
 .float-ig {
-  top: 460px;
+  top: calc(40% + 110px);
 }
 
 .float-yt {
-  top: 515px;
+  top: calc(40% + 165px);
 }
 
 .float-spotify {
-  top: 570px;
-}
-
-@supports (calc()) {
-  .float-tw {
-    top: calc(40% + 55px);
-  }
-
-  .float-ig {
-    top: calc(40% + 110px);
-  }
-
-  .float-yt {
-    top: calc(40% + 165px);
-  }
-
-  .float-spotify {
-    top: calc(40% + 220px);
-  }
+  top: calc(40% + 220px);
 }
 
 /* Redes flotantes  */

@@ -372,6 +372,9 @@ h2 {
 
 .logo2{
     grid-area: logo2;
+    /*Provisional*/
+    width: 30svw;
+    /*-----------*/
 }
 
 .logo3{
