@@ -108,10 +108,9 @@
   footer {
     max-width: 100svw;
     padding: 0 50px;
-    padding-top: 20px;
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 60px;
   }
 
   footer h3{
@@ -158,10 +157,26 @@
   }
 
   #sponsors{
-    margin: 0;
-    max-width: 90svw;
-    padding: 20px;
+    margin: 0 0;
+    width: 100svw;
+    height: 150px;
+    padding: 0 20px;
     border-radius: 0;
+    justify-content: start;
+    box-sizing: border-box;
+  }
+
+  #sponsors h3{
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  #sponsors img{
+    top: 0;
+  }
+
+  .container-sp{
+    grid-template-rows: 50px 10px;
   }
 
   #about p,
