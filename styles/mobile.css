@@ -32,10 +32,6 @@
     justify-content: center;
   }
 
-  #nav_logo1 {
-    margin-left: 15px;
-  }
-
   #video,
   #about,
   #carrousel,
@@ -119,7 +115,8 @@
 
   #nav_logo1 {
     height: unset;
-    width: 85svw;
+    width: 95svw;
+    margin-top: 0;
   }
 
   #date {
