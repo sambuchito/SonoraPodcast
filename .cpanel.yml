@@ -2,4 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home1/sonorapodcast/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
