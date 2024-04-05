@@ -372,8 +372,8 @@ footer {
     padding-bottom: 20px;
     background-color: var(--color5);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }

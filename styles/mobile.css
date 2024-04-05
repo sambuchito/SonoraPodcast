@@ -104,6 +104,12 @@
   footer {
     max-width: 100svw;
     padding: 0 50px 20px 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #correo{
+    font-size: 12px;
   }
 
   footer h3{
