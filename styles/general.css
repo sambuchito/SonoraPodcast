@@ -363,6 +363,7 @@ h2 {
 
 .logo1{
     grid-area: logo1;
+    width: 30svw;
 }
 
 .logo2{
