@@ -32,11 +32,13 @@
     justify-content: center;
   }
 
+  #premios,
   #video,
   #about,
   #carrousel,
   #cifespod,
-  #playlist {
+  #playlist,
+  #podcast {
     width: 100%;
   }
 
@@ -145,11 +147,13 @@
     font-size: 15px;
   }
 
+  #premios,
   #video,
   #about,
   #carrousel,
   #cifespod,
-  #playlist {
+  #playlist,
+  #podcast {
     margin: 0;
     margin-bottom: 20px;
     padding: 20px;
@@ -179,6 +183,9 @@
     grid-template-rows: 50px 10px;
   }
 
+  #podcast h2,
+  #premios p,
+  #premios h3,
   #about p,
   #about h3,
   #cifespod p,
@@ -187,11 +194,15 @@
     width: 90%;
   }
 
-  #about h3{
+  #about, #premios h3{
     height: auto;
   }
 
   #cifespod img {
+    height: 250px;
+  }
+
+  #premios img {
     height: 250px;
   }
 
@@ -204,7 +215,8 @@
     display: none;
   }
 
-  .container {
+  .container,
+  .container2 {
     flex-direction: column;
     align-items: center;
   }
