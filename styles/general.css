@@ -16,7 +16,7 @@
     --color11: #f5c1f0;
     --color12: #9D2972;
     --color13: #4a9c3a;
-    --color14: #b93288cc;
+    --color14: #b93287ec;
 }
 
 @font-face {
@@ -108,10 +108,17 @@ main {
 #cifespod h3 {
     max-width: 900px;
 }
+#cifespod img{
+    float: right;
+    width: 40%;
+}
 
 #premios h3 {
     max-width: 900px;
-} 
+}
+#premios p, #about p{
+    text-align: justify;
+}
 
 .container,
 .container2 {
@@ -184,6 +191,9 @@ nav {
     margin: 0 5px;
 }
 
+#date img{
+    height: 100px;
+}
 
 .date {
     display: flex;
@@ -336,45 +346,32 @@ h2 {
     background-color: var(--color14);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 150px;
-    padding-bottom: 25px;
 }
-
-#sponsors img{
-    height: 50px;
-    /* filter:contrast(0%); */
-    margin: auto;
+#sponsors h3{
+    margin-bottom: 0;
 }
 
 .container-sp{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 150px;
-    grid-template-areas: 
-    "head head head"
-    "logo1 logo2 logo3" ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+}
+.logo1{
+    margin: auto;
+    height: 180px;
+}
+.logo2{
+    margin: auto;
+    height: 300px;
 }
 
 .head{
     grid-area: head;
     text-align: center;
-}
-
-.logo1{
-    grid-area: logo1;
-    width: 30svw;
-}
-
-.logo2{
-    grid-area: logo2;
-    /*Provisional*/
-    width: 30svw;
-    /*-----------*/
-}
-
-.logo3{
-    grid-area: logo3;
 }
 
 footer {
@@ -443,4 +440,9 @@ input {
 
 textarea::-webkit-scrollbar {
     display: none;
+}
+
+#aural{
+    width: 80%;
+    margin-top: 25px;
 }
