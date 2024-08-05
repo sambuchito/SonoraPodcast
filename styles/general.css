@@ -446,3 +446,19 @@ textarea::-webkit-scrollbar {
     width: 80%;
     margin-top: 25px;
 }
+
+.podcard{
+    background-color: whitesmoke; /* Provisional */
+    height: 400px;
+    aspect-ratio: 9/16;
+    border-radius: 20px;
+}
+
+#grilla{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
