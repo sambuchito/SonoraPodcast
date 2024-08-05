@@ -6,6 +6,7 @@ const floats = document.getElementsByClassName("fl-fl");
 const toggle = document.getElementById("togglebtn");
 const date = document.getElementById("date");
 const arrow = document.getElementById("scrolldown");
+const optalogo = document.getElementById("optalogo");
 
 let scrolled = false;
 window.onscroll = () => {
@@ -32,6 +33,7 @@ window.onscroll = () => {
                 logo1.classList.add("logo_hidden");
                 logo2.classList.remove("logo_hidden");
                 video.classList.add("video_nav_hidden");
+                optalogo.classList.add("logo_hidden");
                 for(let i=0; i<floats.length; i++){floats[i].classList.remove("hide-fl");}
                 toggle.classList.remove("hide-toggle");
             }else{
@@ -40,6 +42,7 @@ window.onscroll = () => {
                 logo1.classList.remove("logo_hidden");
                 logo2.classList.add("logo_hidden");
                 video.classList.remove("video_nav_hidden");
+                optalogo.classList.remove("logo_hidden");
                 for(let i=0; i<floats.length; i++){floats[i].classList.add("hide-fl");}
                 toggle.classList.add("hide-toggle");
             }
