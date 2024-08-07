@@ -241,7 +241,7 @@ nav {
 
 #nav_logo1 {
     height: 40%;
-    margin-top: 15%;
+    margin-top: 20%;
     filter: drop-shadow(5px 5px 1px #00000050);
     z-index: 2;
 }
@@ -363,6 +363,7 @@ h2 {
 .logo1{
     margin: auto;
     height: 180px;
+    
 }
 .logo2{
     margin: auto;

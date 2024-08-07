@@ -43,8 +43,8 @@
   }
 
   #sponsors{
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    gap: 90px;
   }
 
   #sponsors img{
@@ -194,7 +194,7 @@
     width: 90%;
   }
 
-  #about, #premios h3{
+  #about h3, #premios h3{
     height: auto;
   }
 
@@ -247,7 +247,7 @@
 
   /*Provisional*/
   .logo2{
-    width: 50svw;
+    width: 40svw;
   }
   /*-----------*/
 }
