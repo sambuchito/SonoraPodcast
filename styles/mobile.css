@@ -199,11 +199,13 @@
   }
 
   #cifespod img {
-    height: 250px;
+    /* height: 250px; */
+    width: 50%;
   }
 
   #premios img {
-    height: 250px;
+    /* height: 250px; */
+    width: 90%;
   }
 
   #date h3 {
