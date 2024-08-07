@@ -417,7 +417,7 @@ footer a{
 }
 
 .footer_logo img {
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 #backgroundsvg {
@@ -459,7 +459,7 @@ textarea::-webkit-scrollbar {
 }
 
 .podcard:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all ease-in-out 0.2s;
 }
 
@@ -469,5 +469,5 @@ textarea::-webkit-scrollbar {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 15px;
 }
