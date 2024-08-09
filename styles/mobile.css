@@ -6,15 +6,15 @@
   .float-tw {
     top: 35%;
   }
-  
+
   .float-ig {
     top: calc(35% + 55px);
   }
-  
+
   .float-yt {
     top: calc(35% + 110px);
   }
-  
+
   .float-spotify {
     top: calc(35% + 165px);
   }
@@ -42,12 +42,12 @@
     width: 100%;
   }
 
-  #sponsors{
+  #sponsors {
     flex-direction: row;
     gap: 90px;
   }
 
-  #sponsors img{
+  #sponsors img {
     height: 20svw;
   }
 
@@ -56,11 +56,12 @@
     height: 100%;
     left: -100%;
   }
-  .sidebar-contact.active{
+
+  .sidebar-contact.active {
     top: 15%;
   }
 
-  .sidebar-contact.active form{
+  .sidebar-contact.active form {
     position: absolute;
     top: 15%;
     left: 10%;
@@ -110,11 +111,11 @@
     justify-content: flex-start;
   }
 
-  #correo{
+  #correo {
     font-size: 12px;
   }
 
-  footer h3{
+  footer h3 {
     margin: 0 25px;
   }
 
@@ -127,8 +128,11 @@
   #date {
     width: 100vw;
   }
-  .date{
+
+  .date {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   h1 {
@@ -160,27 +164,20 @@
     border-radius: 0;
   }
 
-  #sponsors{
+  #sponsors {
     margin: 0 0;
     width: 100svw;
     height: 150px;
-    padding: 0 20px;
+    padding: 0 0;
     border-radius: 0;
-    justify-content: start;
     box-sizing: border-box;
+    justify-content: center;
+    gap: 0;
   }
 
-  #sponsors h3{
+  #sponsors h3 {
     margin: 0;
     padding-top: 20px;
-  }
-
-  #sponsors img{
-    top: 0;
-  }
-
-  .container-sp{
-    grid-template-rows: 50px 10px;
   }
 
   #podcast h2,
@@ -194,7 +191,8 @@
     width: 90%;
   }
 
-  #about h3, #premios h3{
+  #about h3,
+  #premios h3 {
     height: auto;
   }
 
@@ -210,7 +208,6 @@
 
   #date h3 {
     font-size: 25px;
-    margin: 15px;
   }
 
   #scrolldown {
@@ -226,7 +223,7 @@
   .sidebar-contact.active {
     top: 305px;
   }
-  
+
   .sidebar-contact {
     top: 50%;
   }
@@ -234,22 +231,38 @@
   .float-tw {
     top: 50%;
   }
-  
+
   .float-ig {
     top: calc(50% + 55px);
   }
-  
+
   .float-yt {
     top: calc(50% + 110px);
   }
-  
+
   .float-spotify {
     top: calc(50% + 165px);
   }
 
-  /*Provisional*/
   .logo2{
-    width: 40svw;
+    width: 180px;
   }
-  /*-----------*/
+
+  #sponsors .container-sp{
+    width: 180px;
+  }
+
+  #sponsors .container-sp:first-child{
+    flex-wrap: wrap;
+    align-content:flex-start;
+  }
+
+  #grilla {
+    gap: 10px;
+  }
+
+  .podcard{
+    height: 300px;
+    aspect-ratio: 9/16;
+  }
 }
