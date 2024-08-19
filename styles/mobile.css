@@ -261,8 +261,13 @@
     top: calc(50% + 165px);
   }
 
+  .logo1{
+    min-width: 180px;
+  }
+
   .logo2{
     width: 180px;
+    margin-left: 0;
   }
 
   #sponsors .container-sp{
@@ -270,8 +275,7 @@
   }
 
   #sponsors .container-sp:first-child{
-    flex-wrap: wrap;
-    align-content:flex-start;
+    margin-left: -40px;
   }
 
   #grilla {
