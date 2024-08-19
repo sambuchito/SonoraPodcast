@@ -18,6 +18,15 @@
   .float-spotify {
     top: calc(35% + 165px);
   }
+
+  #nav_logo2{
+    width: 20svw;
+    height: auto;
+  }
+
+  nav{
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -192,8 +201,16 @@
   }
 
   #about h3,
-  #premios h3 {
+  #cifespod h2 {
+    font-size: 8svw;
+  }
+
+  #about h3{
     height: auto;
+  }
+
+  #about h1{
+    font-size: 15svw;
   }
 
   #cifespod img {
@@ -264,5 +281,11 @@
   .podcard{
     height: 300px;
     aspect-ratio: 9/16;
+  }
+}
+@media (max-width: 390px) {
+  .podcard{
+    width: 90%;
+    height: auto;
   }
 }
