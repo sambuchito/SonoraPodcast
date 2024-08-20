@@ -31,7 +31,7 @@ window.onscroll = () => {
                 navbar.classList.add("nav_hidden");
                 date.classList.add("hide_date");
                 logo1.classList.add("logo_hidden");
-                if (window.outerWidth>1366){
+                if (window.outerWidth>1360){
                     logo2.classList.remove("logo_hidden");
                 }else{
                     date.classList.add("hide");
