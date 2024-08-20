@@ -31,7 +31,11 @@ window.onscroll = () => {
                 navbar.classList.add("nav_hidden");
                 date.classList.add("hide_date");
                 logo1.classList.add("logo_hidden");
-                logo2.classList.remove("logo_hidden");
+                if (window.outerWidth>1366){
+                    logo2.classList.remove("logo_hidden");
+                }else{
+                    date.classList.add("hide");
+                }
                 video.classList.add("video_nav_hidden");
                 optalogo.classList.add("logo_hidden");
                 for(let i=0; i<floats.length; i++){floats[i].classList.remove("hide-fl");}
@@ -39,6 +43,7 @@ window.onscroll = () => {
             }else{
                 navbar.classList.remove("nav_hidden");
                 date.classList.remove("hide_date");
+                date.classList.remove("hide");
                 logo1.classList.remove("logo_hidden");
                 logo2.classList.add("logo_hidden");
                 video.classList.remove("video_nav_hidden");
