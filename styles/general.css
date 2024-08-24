@@ -415,8 +415,9 @@ footer a{
     margin-left: 20px;
 }
 
-.footer_logo {
-    height: 45px;
+.footer_logo,
+.mec_logo {
+    height: 95px;
     z-index: 2;
     background-color: var(--color5);
     display: flex;
@@ -426,9 +427,12 @@ footer a{
 }
 
 .footer_logo img {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
+.mec_logo img {
+    margin-right: 15px;
+}
 #backgroundsvg {
     position: fixed;
     z-index: 1;
