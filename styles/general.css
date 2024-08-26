@@ -399,9 +399,9 @@ footer {
     box-sizing: border-box;
 }
 
-footer p {
+footer:first-of-type p {
     width: auto;
-    font-family: 'Titulos_2';
+    font-family: 'Titulos';
     font-size: 20px;
     letter-spacing: 5px;
     text-align: center;
@@ -488,21 +488,25 @@ textarea::-webkit-scrollbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 15px;
 }
 
 .licencia{
-    min-height: 30px;
-    height: 30px;
+    min-height: 0;
+    height: 22px;
+    font-family: 'Titulos';
+    background-color: var(--color10);
+    align-items: baseline;
 }
 
 .licencia a{
-    color: white;
+    color: whitesmoke;
 }
 
 .licencia>p{
+    margin: 0;
     font-size: 15px;
     display: flex;
     flex-direction: row;

@@ -284,11 +284,13 @@
   }
 
   .licencia{
-    height: 150px;
+    height: 60px;
+    align-items: center;
+    justify-content: baseline;
   }
 
   .licencia>p{
-    font-size: 15px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
