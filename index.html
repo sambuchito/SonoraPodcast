@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/carousel.css">
-    <!--<link rel="stylesheet" href="styles/contact.css">-->
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <meta name="robots" content="noimageindex">
@@ -22,10 +21,12 @@
     <meta property="og:title" content="Sonora Podcast">
     <meta property="og:description" content="En 2024, Sonora vuelve para ofrecerte un evento renovado">
     <meta property="og:url" content="https://sonorapodcast.uy/">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
     <meta name="google-site-verification" content="5NHBCV5yhxHVgw-RLaOABxT2N9vGjbQUbtiNLvWVSsQ">
 </head>
 
 <body>
+    <!-- Esta página fue hecha por Luciana Rossi y Martín Capuano -->
     <header>
         <nav id="navbar" class="">
             <img id="nav_logo1" src="./resources/logos/Sonora.png">
@@ -60,26 +61,13 @@
                 </div>
             </div>
         </div>
-        <!-- NO ANDA
-        <div class="sidebar-contact" id="sidebarcontact">
-            <div class="toggle hide-toggle" id="togglebtn"></div>
-            <h2>Contacto</h2>
-            <div class="scroll"></div>
-            <form name="contact" action="mailto:uycast@protonmail.com?subject=Contacto Sonora Web" method="post" enctype="text/plain">
-                <input id="email" type="email" name="contact" placeholder="Email">
-                <textarea name="contact" id="mensaje" placeholder="Mensaje"></textarea>
-                <input id="submit" type="submit" name="" value="Enviar">
-            </form>
-        </div>
-        -->
         <div id="podcast">
             <h2>Estos son algunos de los podcasts que vas a ver y escuchar ¡en vivo!</h2>
             <br>
             <div id="grilla">
                 <div class="podcard">
-                    <a href="https://open.spotify.com/show/40cHa1hKv7Uf0bWPLecvUq?si=e9fb6cd812db440d"
-                        target="_blank"><img class="" src="./resources/banners/bellezaquimica.png"
-                            alt="Belleza Quimica"></a>
+                    <a href="https://open.spotify.com/show/1d9EjrJle63PVhwhci1Ejt" target="_blank"><img class=""
+                            src="./resources/banners/gastropolitica.png" alt="Gastropolitica"></a>
                 </div>
                 <div class="podcard">
                     <a href="https://open.spotify.com/show/2Q6rQcOzQTnNvY111pAVHT?si=748c314bbe894e08"
@@ -89,31 +77,22 @@
                     <a href="https://www.youtube.com/channel/UCSZ7G6mnM0lD9V5cN-z0D3g" target="_blank"><img class=""
                             src="./resources/banners/adonde.png" alt="A Donde Nos Lleva Esto"></a>
                 </div>
-
                 <div class="podcard">
                     <a href="https://open.spotify.com/show/11fSDc0JvWGP2jAjBx1isj?si=fe50b3775bba42a9"
                         target="_blank"><img class="" src="resources\podcasts\tortulia-2.png" alt="La Tortulia"></a>
                 </div>
-
                 <div class="podcard">
-                    <a href="https://open.spotify.com/show/1d9EjrJle63PVhwhci1Ejt" target="_blank"><img class=""
-                            src="./resources/banners/gastropolitica.png" alt="Gastropolitica"></a>
+                    <a href="https://open.spotify.com/show/40cHa1hKv7Uf0bWPLecvUq?si=e9fb6cd812db440d"
+                        target="_blank"><img class="" src="./resources/banners/bellezaquimica.png"
+                            alt="Belleza Quimica"></a>
                 </div>
-
                 <div class="podcard">
-                    <a href="https://www.desarmaudio.com/" target="_blank"><img class=""
+                    <a href="https://www.marianopagella.com.ar/" target="_blank"><img class=""
                             src="resources\podcasts\desarmaudio-2.png" alt="Desarmaudio"></a>
                 </div>
             </div>
             <br>
             <h3>Y MÁS POR ANUNCIAR!</h3>
-            <!-- <img src="./resources/podcasts/Gastropolitica_Logo.jpg" alt="Gastropolitica"
-                class="">
-            <img src="./resources/podcasts/ADNLE_channels4_profile.jpg" alt="A Donde Nos Lleva Esto" class="">
-            <img src="./resources/podcasts/Tortulia_LOGO.jpg" alt="La Tortulia" class="">
-            <img loading="lazy" src="./resources/podcasts/Belleza Quimica_Post.png" alt="Belleza Quimica" class="">
-            <img loading="lazy" src="./resources/podcasts/8QueCuentan_ilustracion.png" alt="8 Que Cuentan" class="">
-            <img loading="lazy" src="./resources/podcasts/Desarmaudio.jpeg" alt="Desarmaudio" class=""> -->
         </div>
 
         <div id="about">
@@ -130,8 +109,6 @@
             </p>
         </div>
         <div id="premios">
-            <!-- <h1>Premios Aural</h1> -->
-            <!-- <h3>El primer evento de podcasting del Uruguay</h3> -->
             <img src="./resources/logos/Aural_Logo2_Blanco.png" alt="Premios Aural" id="aural">
             <div class="container2">
                 <p>El Circuito Iberoamericano de Festivales de Podcast (CIFESPOD) anunció el <strong><a
@@ -146,7 +123,7 @@
                     entregaremos uno
                     de estos premios. Contaremos con un jurado especializado para su elección, donde se tendrá en cuenta
                     la calidad narrativa, de guión y diseño sonoro, y la creatividad en el formato.
-
+                    <br><br>
                     Podés postular tu producción <strong><a
                             href="https://docs.google.com/forms/d/e/1FAIpQLSc7j3tWSY8699M5PdOMhk1ckzgUpj7HzAIsmKNVDf1Nurgh1Q/viewform?usp=sf_link"
                             target="_blank">en este formulario</a></strong>, ¡y al inscribirte también formarás parte de
@@ -182,9 +159,10 @@
         </div>
         <div id="video">
             <h2>Sonora 2022</h2>
-            <iframe loading="lazy" src="https://www.youtube.com/embed/-pc3oEecqhw?si=PURUwwtcAHUraUkH"
+            <lite-youtube videoid="-pc3oEecqhw"></lite-youtube>
+            <!-- <iframe loading="lazy" src="https://www.youtube.com/embed/-pc3oEecqhw?si=PURUwwtcAHUraUkH"
                 title="Sonora 2022" frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe> -->
         </div>
         <div id="carrousel">
             <h2>Más sobre nuestra edición 2022</h2>
@@ -247,6 +225,21 @@
                     src="./resources/logos/uycast-transparente.png" alt="UyCast"></a></p>
         <p id="correo"><strong>Contacto: uycast@protonmail.com</strong></p>
         <img class="mec_logo" src="./resources/logos/Logo MEC_Declarado de interés ministerial_diapo.png" alt="MEC">
+    </footer>
+    <footer class="licencia">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                rel="cc:attributionURL" href="https://sonorapodcast.uy/">Sonora Podcast Webpage</a><span
+                property="cc:attributionName">&ThickSpace;by Luciana Rossi and Martin Capuano</span> is licensed
+            under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer">CC BY-NC-SA 4.0<img
+                    style="height:15px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:15px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:15px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                    style="height:15px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/form.js"></script>

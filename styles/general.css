@@ -492,3 +492,20 @@ textarea::-webkit-scrollbar {
     justify-content: center;
     gap: 15px;
 }
+
+.licencia{
+    min-height: 30px;
+    height: 30px;
+}
+
+.licencia a{
+    color: white;
+}
+
+.licencia>p{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
