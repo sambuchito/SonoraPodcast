@@ -6,17 +6,22 @@
   .float-tw {
     top: 35%;
   }
-  
+
   .float-ig {
     top: calc(35% + 55px);
   }
-  
+
   .float-yt {
     top: calc(35% + 110px);
   }
-  
+
   .float-spotify {
     top: calc(35% + 165px);
+  }
+
+  #nav_logo2{
+    width: 15svw;
+    height: auto;
   }
 }
 
@@ -32,20 +37,22 @@
     justify-content: center;
   }
 
+  #premios,
   #video,
   #about,
   #carrousel,
   #cifespod,
-  #playlist {
+  #playlist,
+  #podcast {
     width: 100%;
   }
 
-  #sponsors{
-    flex-direction: column;
-    gap: 0;
+  #sponsors {
+    flex-direction: row;
+    gap: 90px;
   }
 
-  #sponsors img{
+  #sponsors img {
     height: 20svw;
   }
 
@@ -54,11 +61,12 @@
     height: 100%;
     left: -100%;
   }
-  .sidebar-contact.active{
+
+  .sidebar-contact.active {
     top: 15%;
   }
 
-  .sidebar-contact.active form{
+  .sidebar-contact.active form {
     position: absolute;
     top: 15%;
     left: 10%;
@@ -108,11 +116,11 @@
     justify-content: flex-start;
   }
 
-  #correo{
+  #correo {
     font-size: 12px;
   }
 
-  footer h3{
+  footer h3 {
     margin: 0 25px;
   }
 
@@ -125,8 +133,11 @@
   #date {
     width: 100vw;
   }
-  .date{
+
+  .date {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   h1 {
@@ -145,40 +156,38 @@
     font-size: 15px;
   }
 
+  #premios,
   #video,
   #about,
   #carrousel,
   #cifespod,
-  #playlist {
+  #playlist,
+  #podcast {
     margin: 0;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 0;
   }
 
-  #sponsors{
+  #sponsors {
     margin: 0 0;
     width: 100svw;
     height: 150px;
-    padding: 0 20px;
+    padding: 0 0;
     border-radius: 0;
-    justify-content: start;
     box-sizing: border-box;
+    justify-content: center;
+    gap: 0;
   }
 
-  #sponsors h3{
+  #sponsors h3 {
     margin: 0;
     padding-top: 20px;
   }
 
-  #sponsors img{
-    top: 0;
-  }
-
-  .container-sp{
-    grid-template-rows: 50px 10px;
-  }
-
+  #podcast h2,
+  #premios p,
+  #premios h3,
   #about p,
   #about h3,
   #cifespod p,
@@ -187,24 +196,39 @@
     width: 90%;
   }
 
+  #about h3,
+  #cifespod h2 {
+    font-size: 8svw;
+  }
+
   #about h3{
     height: auto;
   }
 
+  #about h1{
+    font-size: 15svw;
+  }
+
   #cifespod img {
-    height: 250px;
+    /* height: 250px; */
+    width: 50%;
+  }
+
+  #premios img {
+    /* height: 250px; */
+    width: 90%;
   }
 
   #date h3 {
     font-size: 25px;
-    margin: 15px;
   }
 
   #scrolldown {
     display: none;
   }
 
-  .container {
+  .container,
+  .container2 {
     flex-direction: column;
     align-items: center;
   }
@@ -212,7 +236,7 @@
   .sidebar-contact.active {
     top: 305px;
   }
-  
+
   .sidebar-contact {
     top: 50%;
   }
@@ -220,22 +244,62 @@
   .float-tw {
     top: 50%;
   }
-  
+
   .float-ig {
     top: calc(50% + 55px);
   }
-  
+
   .float-yt {
     top: calc(50% + 110px);
   }
-  
+
   .float-spotify {
     top: calc(50% + 165px);
   }
 
-  /*Provisional*/
-  .logo2{
-    width: 50svw;
+  .logo1{
+    min-width: 180px;
   }
-  /*-----------*/
+
+  .logo2{
+    width: 180px;
+    margin-left: 0;
+  }
+
+  #sponsors .container-sp{
+    width: 180px;
+  }
+
+  #sponsors .container-sp:first-child{
+    margin-left: -40px;
+  }
+
+  #grilla {
+    gap: 10px;
+  }
+
+  .podcard{
+    height: 300px;
+    aspect-ratio: 9/16;
+  }
+
+  .licencia{
+    height: 60px;
+    align-items: center;
+    justify-content: baseline;
+  }
+
+  .licencia>p{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 390px) {
+  .podcard{
+    width: 90%;
+    height: auto;
+  }
 }
