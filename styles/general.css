@@ -343,6 +343,15 @@ h2 {
     letter-spacing: 3px;
 }
 
+#prefooter{
+    width: 100%;
+    height: 200px;
+    background-color: var(--color14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #sponsors {
     width: 80%;
     max-width: 900px;
@@ -355,14 +364,7 @@ h2 {
 #sponsors h3{
     margin-bottom: 0;
 }
-#prefooter{
-    width: 100%;
-    height: 200px;
-    background-color: var(--color14);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 
 .container-sp{
     display: flex;
@@ -373,12 +375,12 @@ h2 {
 }
 .logo1{
     margin: auto;
-    height: 180px;
-    min-width: 180px;
+    height: 160px;
+    min-width: 160px;
 }
 .logo2{
     margin: auto;
-    height: 180px;
+    height: 160px;
     width: 300px;
     margin-left: -40px;
 }
@@ -387,6 +389,62 @@ h2 {
     grid-area: head;
     text-align: center;
 }
+
+#prefooter-2 {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-flow: row wrap; */
+}
+
+#sponsors-2 {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#sponsors-2 h3{
+    /* grid-area: head; */
+    text-align: center;
+    
+    margin-bottom: 0;
+}
+
+.container-sp-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    /* width: 30%; */
+}
+
+/* .head-2 {
+    /* display: flex;
+    flex-direction: row;
+    justify-items: center;
+    grid-area: head-2;
+    text-align: center;
+} */
+
+.logo-s {
+    margin: auto;
+    height: 150px;
+    min-width: 150px;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    /* flex-flow: row wrap; */
+    gap: 250px;
+}
+
+
 
 footer {
     min-height: 100px;
