@@ -58,13 +58,22 @@
   }
 
   #sponsors-2 {
-    flex-direction: row;
-    gap: 90px;
+    flex-direction: column;
+    /* justify-content: center; */
   }
 
+  #sponsors-2 h3 {
+    align-content: center;
+    /* margin-bottom: 0; */ 
+}
+
   
-  .container-sp-2 img{
-    width: 20svw;
+  .container-sp-2 {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-wrap: wrap;
+    margin-left: 70px;
   }
 
   .sidebar-contact {
@@ -182,8 +191,7 @@
     border-radius: 0;
   }
 
-  #sponsors,
-  #sponsors-2 {
+  #sponsors {
     margin: 0 0;
     width: 100svw;
     height: 150px;
@@ -194,8 +202,7 @@
     gap: 0;
   }
 
-  #sponsors h3,
-  #sponsors-2 h3 {
+  #sponsors h3 {
     margin: 0;
     padding-top: 20px;
     
@@ -317,23 +324,35 @@
     margin-left: -40px;
   }
 
-  #sponsors-2 .container-sp-2 {
+  /* #sponsors-2 .container-sp-2 {
     width: 180px;
   }
 
   #sponsors-2 .container-sp-2:first-child{
     margin-left: -40px;
     gap: 15px;
-  }
+  } */
 
   #sponsors-2 h3{
-    align-content: center;
+    text-align: center;
   }
 
-  .logo-s{
+  .container-sp-2 {
+    /* margin-left: 45%; */
+    width: 70%;
+    display: grid;
+    gap: 35px 35px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    
+}
+
+  /* .logo-s{
     min-width: 50%;
-    height: 100%;
-  }
+    height: 50%;
+  } */
 
  
   .licencia{
@@ -395,14 +414,19 @@
   }
 
   #prefooter-2 {
-    max-width: 50svw;
-    padding: 0 50px 20px 50px;
+    /* width: 50%; */
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: center; */
   }
 
   .container-sp-2 {
     width: 50%;
+    display: grid;
+    gap: 25px 25px;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    align-items: center;
+        
   }
 
   #sponsors-2 h3 {
@@ -410,15 +434,11 @@
     text-align: center;
     margin-bottom: 15px;
   }
-
-  .logo-s {
-    width: 25%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  
+  /* .logo-s {
+    height: 50%;
     align-items: center;
-}
+  } */
 
   .licencia{
     height: 20px;
