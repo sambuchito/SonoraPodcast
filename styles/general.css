@@ -102,12 +102,12 @@ main {
     /* flex-direction: row; */
     /* align-items: baseline; */
     justify-content: center;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 
 .podcard{
     /* background-color: black;  Provisional */
-    height: 950px;
+    height: 1050px;
     aspect-ratio: 9/16;
     border-radius: 20px;
     transition: all ease-in-out 0.4s;
@@ -118,6 +118,7 @@ main {
     height: 100%;
     border-radius: 20px;
     padding-bottom: 15px;
+    max-width: 800px;
 }
 
 /* .podcard:hover{
@@ -129,32 +130,35 @@ main {
 #redtickets {
     display: flex;
     /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    align-items: baseline;
+    flex-direction: row;
+    /* align-items: baseline; */
     justify-content: space-between;
-    gap: 15px;
-    margin-top: 75px;
+    gap: 35px;
+    /* margin-top: 15px; */
 }
 
 #redtickets img {
     float: left;
     flex-direction: row;
-    /* width: 20%; */
-    height: 100px;
+    width: 80%;
+    height: auto;
+    max-width: 120px;
     /* min-width: 40px; */
     margin: auto;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 #redtickets h3 {
     /* float: right; */
     flex-direction: row;
-    width: 60%;
-    min-width: 450px;
+    text-align: justify;
+    width: 80%;
+    /* min-width: 150px; */
+    max-width: 480px;
     margin: auto;
+    margin-bottom: 55px;
+    align-content: center;
 }
-
-
 
 #taller {
     display: flex;
@@ -170,9 +174,11 @@ main {
 
 .container-t img{
     /* float: right; */
+    /* position: absolute; */
     align-items: center;
     width: 100%;
-    min-width: 250px;
+    max-width: 800px;
+    /* min-width: 250px; */
     margin: auto;
     border-radius: 10px;
 }
@@ -437,7 +443,7 @@ h2 {
 
 #prefooter {
     width: 100%;
-    height: 200px;
+    height: fit-content;
     background-color: var(--color14);
     display: flex;
     flex-direction: row;
@@ -484,7 +490,7 @@ h2 {
 
 #prefooter-2 {
     width: 100%;
-    height: 200px;
+   /*  height: 200px; */
     background-color: var(--color14);
     display: flex;
     flex-direction: row;
@@ -496,11 +502,12 @@ h2 {
 
 #sponsors-2 {
     width: 80%;
-    max-width: 900px;
+    max-width: 700px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 15px;
     margin-bottom: 25px;
     
 }
