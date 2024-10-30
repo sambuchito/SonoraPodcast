@@ -107,8 +107,8 @@ main {
 
 .podcard{
     /* background-color: black;  Provisional */
-    height: 1050px;
-    aspect-ratio: 9/16;
+    /* height: 1050px; */
+    /* aspect-ratio: 9/16; */
     border-radius: 20px;
     transition: all ease-in-out 0.4s;
 }
@@ -119,6 +119,8 @@ main {
     border-radius: 20px;
     padding-bottom: 15px;
     max-width: 800px;
+    aspect-ratio: 11/16;
+    margin-top: -3vh;
 }
 
 /* .podcard:hover{
@@ -133,8 +135,8 @@ main {
     flex-direction: row;
     /* align-items: baseline; */
     justify-content: space-between;
-    gap: 35px;
-    /* margin-top: 15px; */
+    gap: 3vw;
+    margin-top: 30px;
 }
 
 #redtickets img {
@@ -155,8 +157,8 @@ main {
     width: 80%;
     /* min-width: 150px; */
     max-width: 480px;
-    margin: auto;
-    margin-bottom: 55px;
+    /* margin: auto; */
+    /* margin-bottom: 55px; */
     align-content: center;
 }
 
