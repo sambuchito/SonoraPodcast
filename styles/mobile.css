@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   body {
     max-width: 100svw;
     background-image: url('../resources/f1-mobile.svg');
