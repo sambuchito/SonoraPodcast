@@ -69,11 +69,11 @@
 
   
   .container-sp-2 {
-    width: 70%;
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    flex-wrap: wrap;
-    margin-left: 70px;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: nowrap;
+    /* margin-left: 70px; */
   }
 
   .sidebar-contact {
@@ -327,15 +327,6 @@
     margin-left: -40px;
   }
 
-  /* #sponsors-2 .container-sp-2 {
-    width: 180px;
-  }
-
-  #sponsors-2 .container-sp-2:first-child{
-    margin-left: -40px;
-    gap: 15px;
-  } */
-
   #sponsors-2 h3{
     text-align: center;
   }
@@ -346,9 +337,9 @@
     display: grid;
     gap: 35px 35px;
     grid-template-columns: auto auto;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    /* box-sizing: border-box; */
+    margin-left: 70px;
     
 }
 
@@ -385,13 +376,8 @@
     margin-bottom: 0;
   }
 
-  /* #redtickets h3 {
-    font-size: 3svw;
-    width: 100%;
-    /* margin-right: 15%; */
-  /*} */
   #redtickets img{
-    width: 15%;
+    width: 25%;
     max-width: 255px;
     height: auto;
   }
@@ -399,9 +385,10 @@
   #redtickets h3 {
     /* font-size: 5svw; */
     width: 80%;
-    min-width: 25px;
+    min-width: 35px;
     text-align: justify;
-    /* margin-right: 75%; */
+    margin-bottom: 35px;
+    margin-right: 12%;
   }
   
 
@@ -425,13 +412,13 @@
   }
 
   .container-sp-2 {
-    width: 50%;
+    width: 75%;
     display: grid;
     gap: 25px 25px;
     grid-template-columns: auto auto;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-        
+    /* margin-left: 25px;  */      
   }
 
   #sponsors-2 h3 {
@@ -440,8 +427,8 @@
     margin-bottom: 15px;
   }
   
-  /* .logo-s {
-    height: 50%;
+  /* .container-sp-2 img {
+    min-height: 75%;
     align-items: center;
   } */
 
