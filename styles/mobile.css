@@ -43,7 +43,8 @@
   #carrousel,
   #cifespod,
   #playlist,
-  #podcast {
+  #podcast,
+  #taller {
     width: 100%;
   }
 
@@ -54,6 +55,21 @@
 
   #sponsors img {
     height: 20svw;
+  }
+
+  #sponsors-2 {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  #sponsors-2 h3 {
+    align-content: center;
+    /* margin-bottom: 0; */ 
+}
+
+  
+  .container-sp-2 {
+    width: 100%;
   }
 
   .sidebar-contact {
@@ -92,7 +108,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   body {
     max-width: 100svw;
     background-image: url('../resources/f1-mobile.svg');
@@ -109,6 +125,7 @@
     display: none;
   }
 
+  
   footer {
     max-width: 100svw;
     padding: 0 50px 20px 50px;
@@ -162,7 +179,8 @@
   #carrousel,
   #cifespod,
   #playlist,
-  #podcast {
+  #podcast,
+  #taller {
     margin: 0;
     margin-bottom: 20px;
     padding: 20px;
@@ -183,9 +201,11 @@
   #sponsors h3 {
     margin: 0;
     padding-top: 20px;
+    
   }
-
-  #podcast h2,
+  
+  #taller p,
+  #redtickets h3,
   #premios p,
   #premios h3,
   #about p,
@@ -196,9 +216,37 @@
     width: 90%;
   }
 
+  
+  #taller h3,
+  #podcard h2{
+    width: 80%;
+    align-content: center;
+  }
+
+  .podcard{
+    aspect-ratio: 11/16;
+  }
+  .podcard img{
+    width: 100%;
+    margin-bottom: -3vh;
+  }
+
+  #redtickets img {
+    /* height: 250px; */
+    width: 35%;
+    min-width: 50px;    
+  }
+
+  #redtickets h3 {
+    /* font-size: 5svw; */
+    width: 75%;
+    text-align: justify;
+    /* margin-right: 15%; */
+  }
+
   #about h3,
   #cifespod h2 {
-    font-size: 8svw;
+    font-size: 7svw;
   }
 
   #about h3{
@@ -274,32 +322,118 @@
     margin-left: -40px;
   }
 
-  #grilla {
-    gap: 10px;
+  #sponsors-2 h3{
+    text-align: center;
   }
 
-  .podcard{
-    height: 300px;
-    aspect-ratio: 9/16;
+  .container-sp-2 {
+    margin: auto;
+    width: 90%;
+    gap: 35px 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+  .logo-s{
+    max-width: 130px;
   }
 
   .licencia{
-    height: 60px;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: baseline;
+  }
+
+  .licencia a{
+    justify-items: center;
+  }
+  
+  .licencia>p{
+    font-size: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .podcard{
+    width: 100%;
+    height: 100%;
+  }
+  .podcard img{
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #redtickets img{
+    width: 25%;
+    max-width: 255px;
+    height: auto;
+  }
+  
+  #redtickets h3 {
+    /* font-size: 5svw; */
+    width: 80%;
+    min-width: 35px;
+    text-align: justify;
+    margin-bottom: 35px;
+    margin-right: 12%;
+  }
+
+  #taller {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about h3 {
+    font-size: 2svw;
+  }
+
+  #about h3{
+    height: auto;
+  }
+
+  #prefooter-2 {
+    /* width: 50%; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+  }
+
+  .container-sp-2 {
+    width: 100%;
+    margin: auto;
+    gap: 25px 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sponsors-2 h3 {
+    /* grid-area: head; */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* .container-sp-2 img {
+    min-height: 75%;
+    align-items: center;
+  } */
+
+  .licencia{
+    height: 45px;
     align-items: center;
     justify-content: baseline;
   }
 
   .licencia>p{
-    font-size: 10px;
+    font-size: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-}
-@media (max-width: 390px) {
-  .podcard{
-    width: 90%;
-    height: auto;
   }
 }

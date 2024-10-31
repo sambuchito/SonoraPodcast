@@ -79,16 +79,115 @@ main {
 #carrousel,
 #cifespod,
 #playlist,
-#podcast {
+#podcast,
+#taller {
     background-color: var(--color14);
     padding: 50px;
     padding-top: 10px;
     width: 80%;
     max-width: 900px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     box-shadow: 5px 5px 2px #00000050;
     box-sizing: border-box;
+}
+
+#podcast h2 {
+    text-align: center;
+}
+
+#grilla {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* align-items: baseline; */
+    justify-content: center;
+    /* margin-top: 0; */
+}
+
+.podcard{
+    /* background-color: black;  Provisional */
+    /* height: 1050px; */
+    /* aspect-ratio: 9/16; */
+    border-radius: 20px;
+    transition: all ease-in-out 0.4s;
+}
+
+.podcard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    max-width: 800px;
+    aspect-ratio: 11/16;
+    margin-top: -3vh;
+}
+
+/* .podcard:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+} */
+
+
+#redtickets {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    gap: 3vw;
+    margin-top: 30px;
+}
+
+#redtickets img {
+    float: left;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    max-width: 120px;
+    /* min-width: 40px; */
+    margin: auto;
+    margin-left: 5%;
+}
+
+#redtickets h3 {
+    /* float: right; */
+    flex-direction: row;
+    text-align: justify;
+    width: 80%;
+    /* min-width: 150px; */
+    max-width: 480px;
+    /* margin: auto; */
+    /* margin-bottom: 55px; */
+    align-content: center;
+}
+
+#taller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#taller h3 {
+    text-align: center;
+    max-width: 900px;
+}
+
+.container-t img{
+    /* float: right; */
+    /* position: absolute; */
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    /* min-width: 250px; */
+    margin: auto;
+    border-radius: 10px;
+}
+
+#taller p {
+    text-align: center;
+    align-content: baseline;
 }
 
 #video, #playlist {
@@ -258,6 +357,7 @@ nav {
 .logo_hidden {
     display: none;
 }
+
 @keyframes showup_logo2 {
     from {
         transform: translateY(-100px);
@@ -300,12 +400,13 @@ a:hover {
 
 #about p, #premios p {
     max-width: 900px;
+    margin-bottom: 15px;
 }
 
 #about h1 {
     width: 80%;
     max-width: 900px;
-    margin-top: 35px;
+    margin-top: 15px;
     font-size: 50px;
 }
 
@@ -342,6 +443,15 @@ h2 {
     letter-spacing: 3px;
 }
 
+#prefooter {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #sponsors {
     width: 80%;
     max-width: 900px;
@@ -351,40 +461,84 @@ h2 {
     justify-content: space-around;
     gap: 150px;
 }
-#sponsors h3{
+#sponsors h3 {
     margin-bottom: 0;
 }
-#prefooter{
-    width: 100%;
-    height: 200px;
-    background-color: var(--color14);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.container-sp{
+.container-sp {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     width: 30%;
 }
-.logo1{
+.logo1 {
     margin: auto;
-    height: 180px;
-    min-width: 180px;
+    height: 160px;
+    min-width: 160px;
 }
-.logo2{
+.logo2 {
     margin: auto;
-    height: 180px;
+    height: 160px;
     width: 300px;
     margin-left: -40px;
 }
 
-.head{
+.head {
     grid-area: head;
     text-align: center;
+}
+
+#prefooter-2 {
+    width: 100%;
+   /*  height: 200px; */
+    background-color: var(--color14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: fit-content;
+    
+}
+
+#sponsors-2 {
+    width: 80%;
+    max-width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 15px; */
+    margin-bottom: 25px;
+    
+}
+
+#sponsors-2 h3 {
+    /* grid-area: head; */
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    margin-bottom: 0; 
+}
+
+.container-sp-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 45px;
+}
+
+
+.logo-s {
+    margin: auto;    
+    max-width: 190px;
+    width: 100%;     
+    
 }
 
 footer {
@@ -412,9 +566,9 @@ footer:first-of-type p {
     margin-bottom: 10px;
 }
 
-footer a{
+footer a {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 9px;
 }
 
 .footer_logo {
@@ -461,37 +615,6 @@ textarea::-webkit-scrollbar {
     margin-top: 25px;
 }
 
-.podcard{
-    background-color: black; /* Provisional */
-    height: 350px;
-    aspect-ratio: 9/16;
-    border-radius: 20px;
-    transition: all ease-in-out 0.4s;
-}
-
-.podcard img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.podcard:hover{
-    transform: scale(1.1);
-    transition: all ease-in-out 0.2s;
-}
-
-#podcast h3{
-    text-align: center;
-}
-
-#grilla{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    gap: 15px;
-}
 
 .licencia{
     min-height: 0;
@@ -507,7 +630,7 @@ textarea::-webkit-scrollbar {
 
 .licencia>p{
     margin: 0;
-    font-size: 15px;
+    font-size: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
