@@ -19,7 +19,7 @@
     top: calc(35% + 165px);
   }
 
-  #nav_logo2{
+  #nav_logo2 {
     width: 15svw;
     height: auto;
   }
@@ -64,10 +64,10 @@
 
   #sponsors-2 h3 {
     align-content: center;
-    /* margin-bottom: 0; */ 
-}
+    /* margin-bottom: 0; */
+  }
 
-  
+
   .container-sp-2 {
     width: 100%;
   }
@@ -125,21 +125,23 @@
     display: none;
   }
 
-  
+
   footer {
     max-width: 100svw;
     padding: 0 50px 20px 50px;
     flex-direction: column;
     justify-content: flex-start;
   }
-
-  #correo {
+  .footer p{
     font-size: 12px;
   }
+  /* #correo {
+    font-size: 12px;
+  } */
 
-  footer h3 {
+  /* footer h3 {
     margin: 0 25px;
-  }
+  } */
 
   #nav_logo1 {
     height: unset;
@@ -201,9 +203,9 @@
   #sponsors h3 {
     margin: 0;
     padding-top: 20px;
-    
+
   }
-  
+
   #taller p,
   #redtickets h3,
   #premios p,
@@ -216,17 +218,22 @@
     width: 90%;
   }
 
-  
+
   #taller h3,
-  #podcard h2{
+  #podcard h2 {
     width: 80%;
     align-content: center;
   }
 
-  .podcard{
+  #taller h3 {
+    padding-bottom: 10vh;
+  }
+
+  .podcard {
     aspect-ratio: 11/16;
   }
-  .podcard img{
+
+  .podcard img {
     width: 100%;
     margin-bottom: -3vh;
   }
@@ -234,14 +241,16 @@
   #redtickets img {
     /* height: 250px; */
     width: 35%;
-    min-width: 50px;    
+    min-width: 50px;
   }
 
   #redtickets h3 {
     /* font-size: 5svw; */
-    width: 75%;
-    text-align: justify;
-    /* margin-right: 15%; */
+    width: 95%;
+    text-align: start;
+    min-width: 95px;
+    /* margin-bottom: 35px; */
+    margin-right: 0;
   }
 
   #about h3,
@@ -249,11 +258,11 @@
     font-size: 7svw;
   }
 
-  #about h3{
+  #about h3 {
     height: auto;
   }
 
-  #about h1{
+  #about h1 {
     font-size: 15svw;
   }
 
@@ -305,24 +314,24 @@
     top: calc(50% + 165px);
   }
 
-  .logo1{
+  .logo1 {
     min-width: 180px;
   }
 
-  .logo2{
+  .logo2 {
     width: 180px;
     margin-left: 0;
   }
 
-  #sponsors .container-sp{
+  #sponsors .container-sp {
     width: 180px;
   }
 
-  #sponsors .container-sp:first-child{
+  #sponsors .container-sp:first-child {
     margin-left: -40px;
   }
 
-  #sponsors-2 h3{
+  #sponsors-2 h3 {
     text-align: center;
   }
 
@@ -333,13 +342,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+  }
 
-  .logo-s{
+  .logo-s {
     max-width: 130px;
   }
 
-  .licencia{
+  .licencia {
     height: 30px;
     display: flex;
     flex-wrap: nowrap;
@@ -347,11 +356,11 @@
     justify-content: baseline;
   }
 
-  .licencia a{
+  .licencia a {
     justify-items: center;
   }
-  
-  .licencia>p{
+
+  .licencia>p {
     font-size: 7px;
     display: flex;
     flex-direction: row;
@@ -361,21 +370,28 @@
 }
 
 @media (max-width: 390px) {
-  .podcard{
+  .podcard {
     width: 100%;
     height: 100%;
   }
-  .podcard img{
+
+  #podcast h2 {
+    width: 50%;
+    align-content: center;
+    font-size: 5px;
+  }
+
+  .podcard img {
     width: 100%;
     margin-bottom: 0;
   }
 
-  #redtickets img{
+  #redtickets img {
     width: 25%;
     max-width: 255px;
     height: auto;
   }
-  
+
   #redtickets h3 {
     /* font-size: 5svw; */
     width: 80%;
@@ -383,6 +399,7 @@
     text-align: justify;
     margin-bottom: 35px;
     margin-right: 12%;
+
   }
 
   #taller {
@@ -390,19 +407,31 @@
     height: 100%;
   }
 
+  #taller h1 {
+    text-align: center;
+    max-width: 300px;
+    font-size: 35px;
+  }
+
+  #taller h3 {
+    text-align: center;
+    max-width: 600px;
+    font-size: 15px;
+  }
+
   #about h3 {
     font-size: 2svw;
   }
 
-  #about h3{
+  #about h3 {
     height: auto;
   }
 
-  #prefooter-2 {
-    /* width: 50%; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-  }
+  /* #prefooter-2 {
+    width: 50%; */
+  /* flex-direction: column; */
+  /* justify-content: center;
+  } */
 
   .container-sp-2 {
     width: 100%;
@@ -417,19 +446,23 @@
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   /* .container-sp-2 img {
     min-height: 75%;
     align-items: center;
   } */
 
-  .licencia{
+  .footer p {
+    font-size: smaller;
+  }
+
+  .licencia {
     height: 45px;
     align-items: center;
     justify-content: baseline;
   }
 
-  .licencia>p{
+  .licencia>p {
     font-size: 8px;
     display: flex;
     flex-direction: row;
