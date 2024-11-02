@@ -183,14 +183,21 @@ main {
 #taller h1 {
     text-align: center;
     max-width: 700px;
-    font-size: 45px;   
+    font-size: 45px;
+    padding: 0%;   
 }
 
 #taller h3 {
-    text-align: center;
+    text-align: justify;
     max-width: 900px;
     font-size: 20px;
     padding-bottom: 3vh;
+}
+
+#taller p {
+    text-align: justify;
+    align-content: baseline;
+    font-size: 20px;
 }
 
 .container-t {
@@ -206,12 +213,6 @@ main {
     /* min-width: 250px; */
     margin: auto;
     border-radius: 10px;
-}
-
-#taller p {
-    text-align: center;
-    align-content: baseline;
-    font-size: 17px;
 }
 
 #video, #playlist {
@@ -484,6 +485,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     gap: 150px;
+    margin-bottom: 5%;
 }
 
 #sponsors h3 {
@@ -582,7 +584,7 @@ footer {
 footer:first-of-type p {
     width: auto;
     font-family: 'Titulos';
-    font-size: 20px;
+    font-size: 12px;
     letter-spacing: 5px;
     text-align: center;
     display: flex;
@@ -597,8 +599,12 @@ footer a {
     margin-left: 9px;
 }
 
+#correo {
+    font-size: 12px;
+}
+
 .footer_logo {
-    width: 80px;
+    width: 60px;
     z-index: 2;
     background-color: var(--color5);
     display: flex;
@@ -608,7 +614,7 @@ footer a {
 }
 
 .mec_logo {
-    width: 300px;
+    width: 250px;
 }
 
 #backgroundsvg {

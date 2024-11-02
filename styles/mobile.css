@@ -125,24 +125,6 @@
     display: none;
   }
 
-  footer {
-    max-width: 100svw;
-    padding: 0 50px 20px 50px;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  footer:first-of-type p{
-    font-size: 15px;
-  }
-  /* #correo {
-    font-size: 12px;
-  } */
-
-  /* footer h3 {
-    margin: 0 25px;
-  } */
-
   #nav_logo1 {
     height: unset;
     width: 95svw;
@@ -215,18 +197,22 @@
   #cifespod p,
   #cifespod h2,
   #carrousel h2 {
-    width: 90%;
+    width: 95%;
   }
 
 
   #taller h3,
   #podcard h2 {
-    width: 80%;
+    width: 95%;
     align-content: center;
   }
 
+  #taller p{
+    text-align: justify;
+  }
+
   #taller h3 {
-    padding-bottom: 10vh;
+    padding-bottom: 3vh;
   }
 
   .podcard {
@@ -342,12 +328,39 @@
     gap: 35px 35px;
     justify-content: center;
     align-items: center;
+    /* grid-template-columns: auto auto auto auto; */
     flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .logo-s {
-    max-width: 130px;
+    max-width: 110px;
   }
+
+  footer {
+    max-width: 100svw;
+    padding: 0 50px 20px 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  footer:first-of-type p{
+    font-size: 9px;
+  }
+
+  .footer_logo {
+    max-width: 35px;
+  }
+
+  .mec_logo {
+    max-width: 222px;
+  }
+  
+  
+  #correo {
+    font-size: 9px;
+  }
+
 
   .licencia {
     height: 30px;
@@ -414,7 +427,7 @@
 
   #taller h3 {
     text-align: center;
-    max-width: 600px;
+    max-width: 650px;
     font-size: 15px;
   }
 
@@ -426,18 +439,16 @@
     height: auto;
   }
 
-  /* #prefooter-2 {
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-  } */
-
   .container-sp-2 {
-    width: 100%;
+    width: 80%;
     margin: auto;
+    /* display: grid;
+    flex-direction: column; */
     gap: 25px 25px;
+    /* grid-template-columns: auto auto; */
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    /* flex-wrap: wrap; */
   }
 
   #sponsors-2 h3 {
@@ -447,13 +458,8 @@
     font-size: 18px;
   }
 
-  /* .container-sp-2 img {
-    min-height: 75%;
-    align-items: center;
-  } */
-
   .footer p {
-    font-size: smaller;
+    font-size: 7px;
   }
 
   .licencia {
