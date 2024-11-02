@@ -48,6 +48,15 @@
     width: 100%;
   }
 
+  #podcast h2 {
+    font-size: 35px;
+  }
+
+  #redtickets h3 {
+    font-size: 29px;
+    padding-bottom: 5vh;
+  }
+
   #sponsors {
     flex-direction: row;
     gap: 90px;
@@ -202,9 +211,13 @@
 
 
   #taller h3,
-  #podcard h2 {
+  #podcast h2 {
     width: 95%;
     align-content: center;
+  }
+
+  #podcast h2 {
+    font-size: 20px;
   }
 
   #taller p{
@@ -212,7 +225,8 @@
   }
 
   #taller h3 {
-    padding-bottom: 3vh;
+    text-align: justify;
+    padding-bottom: 7vh;
   }
 
   .podcard {
@@ -224,6 +238,10 @@
     margin-bottom: -3vh;
   }
 
+  #redtickets {    
+    max-width: 650px;
+  }
+
   #redtickets img {
     /* height: 250px; */
     width: 35%;
@@ -232,10 +250,10 @@
 
   #redtickets h3 {
     /* font-size: 5svw; */
-    width: 95%;
+    width: 100%;
     text-align: start;
-    min-width: 95px;
-    /* margin-bottom: 35px; */
+    max-width: 400px;
+    font-size: 20px;
     margin-right: 0;
   }
 
@@ -383,7 +401,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 420px) {
   .podcard {
     width: 100%;
     height: 100%;
@@ -393,8 +411,16 @@
     width: 100%;
     align-content: center;
     font-size: 15px;
+    text-align: center;
+    margin-bottom: 4vh;
   }
 
+  /* .podcard h2 {
+    width: 80%;
+    margin-bottom: 0;
+    font-size: 25px;
+  }
+ */
   .podcard img {
     width: 100%;
     margin-bottom: 0;
@@ -407,11 +433,11 @@
   }
 
   #redtickets h3 {
-    /* font-size: 5svw; */
+    font-size: 15px;
     width: 80%;
-    min-width: 35px;
+    max-width: 200px;
     text-align: start;
-    margin-bottom: 35px;
+    margin-bottom: 5px;
   }
 
   #taller {
