@@ -215,6 +215,12 @@ main {
     border-radius: 10px;
 }
 
+#taller p {
+    text-align: center;
+    align-content: baseline;
+    font-size: 15px;
+}
+
 #video, #playlist {
     display: flex;
     flex-direction: column;
