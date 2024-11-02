@@ -215,14 +215,18 @@
   #cifespod p,
   #cifespod h2,
   #carrousel h2 {
-    width: 90%;
+    width: 95%;
   }
 
 
   #taller h3,
   #podcard h2 {
-    width: 80%;
+    width: 95%;
     align-content: center;
+  }
+
+  #taller p{
+    text-align: justify;
   }
 
   #taller h3 {
@@ -414,7 +418,7 @@
 
   #taller h3 {
     text-align: center;
-    max-width: 600px;
+    max-width: 650px;
     font-size: 15px;
   }
 
