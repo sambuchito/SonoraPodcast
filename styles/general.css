@@ -476,6 +476,7 @@ h2 {
 }
 
 #prefooter {
+    margin-top: 7rem;
     width: 100%;
     height: fit-content;
     background-color: var(--color14);
