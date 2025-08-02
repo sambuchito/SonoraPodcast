@@ -182,10 +182,10 @@ main {
     align-items: center;
 }
 
-#taller h1 {
+#taller h2 {
     text-align: center;
     max-width: 700px;
-    font-size: 45px;
+    font-size: 35px;
     padding: 0%;   
 }
 
@@ -200,6 +200,16 @@ main {
     text-align: center;
     align-content: baseline;
     font-size: 24px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: baseline;
+    /* font-size: 23px; */
 }
 
 .newsletter {
@@ -237,12 +247,6 @@ main {
     border-radius: 10px;
 }
 
-#newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* #newsletter p{
     font-size: 24px;
@@ -501,51 +505,6 @@ h2 {
     letter-spacing: 3px;
 }
 
-/* Flechas */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  user-select: none;
-  z-index: 10;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-/* Dots */
-#dot-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: #333;
-}
-
 
 #prefooter {
     margin-top: 5rem;
@@ -626,9 +585,9 @@ h2 {
     /* grid-area: head; */
     /* display: flex; */
     /* flex-direction: column; */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1rem; 
 }
 
 .container-sp-2 {
@@ -652,7 +611,7 @@ h2 {
     height: auto;
 }
 .logo-ucu {
-    max-width: 195px;
+    max-width: 215px;
     width: 100%;
     height: auto;
 }
