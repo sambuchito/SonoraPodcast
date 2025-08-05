@@ -81,8 +81,23 @@
     gap: 90px;
   }
 
-  #sponsors img {
+  /* #sponsors img {
     height: 20svw;
+  } */
+
+  .media-logos {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo2 {
+    max-width: 100px;
+    max-height: 80px;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
   }
 
   #sponsors-2 {
@@ -349,12 +364,35 @@
 
 
   #sponsors {
-    width: 100svw;
+    width: 90svw;
     padding: 0 0;
     border-radius: 0;
     box-sizing: border-box;
     justify-content: center;
     gap: 0;
+  }
+
+  .media-logos {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo2 {
+    max-width: 120px;
+    max-height: 90px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo1 {
+    min-width: 150px;
+    min-height: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
  /*  .logo1 {
