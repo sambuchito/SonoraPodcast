@@ -550,14 +550,14 @@ h2 {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5.5rem;
     margin-bottom: 1rem;
 }
 
 .container-sp {
     flex: 1;
-    min-width: 250px;
-    max-width: 400px;
+    min-width: 350px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -573,31 +573,26 @@ h2 {
 
 .support-logos {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "a . b . c"
-    ". d . e .";
+    "a b c"
+    ". d e";
   justify-items: center;
   align-items: center;
-  gap: 0.5rem;
-  width: 110%;
+  gap: 0.9rem;
+  width: 120%;
 }
 
 .support-logos a:nth-child(1) { grid-area: a; }
 .support-logos img:nth-child(2) { grid-area: b; }
 .support-logos img:nth-child(3) { grid-area: c; }
-.support-logos img:nth-child(4) { grid-area: d; }
+.support-logos img:nth-child(4) {
+  grid-area: unset;
+  grid-column: 2;
+  justify-self: end;
+}
 .support-logos img:nth-child(5) { grid-area: e; }
 
-
-/* .container-sp .support-logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-  gap: 1.5rem;
-  width: 100%;
-} */
 
 .container-mp {
   flex: 1;
@@ -611,7 +606,7 @@ h2 {
 
 .container-mp h3 {
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
     color: var(--textColor, #fff);
 }
@@ -623,6 +618,7 @@ h2 {
   align-items: center;
   gap: 1.5rem;
   width: 100%;
+  margin-top: 1.2rem;
 }
 
 .logo1 {
@@ -643,7 +639,7 @@ h2 {
 }
 
 .logo3 {
-    max-height: 21rem;
+    max-height: 15rem;
     height: auto;
     width: auto;
     max-width: 120%;
@@ -652,10 +648,10 @@ h2 {
 }
 
 .logo4 {
-    max-height: 21rem;
+    min-width: 15rem;
     height: auto;
     width: auto;
-    max-width: 130%;
+    max-width: 150%;
     object-fit: contain;
     margin-top: 1rem;
 }
