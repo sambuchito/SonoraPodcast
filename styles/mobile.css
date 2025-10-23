@@ -100,6 +100,22 @@
     object-fit: contain;
   }
 
+  .logo3 {
+    max-width: 100px;
+    max-height: 80px;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo4 {
+    max-width: 100px;
+    max-height: 80px;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+
   #sponsors-2 {
     flex-direction: column;
     /* justify-content: center; */
@@ -111,7 +127,7 @@
   }
 
 
-  .container-sp-2 {
+  .container-sp, .container-sp-2 {
     width: 100%;
   }
 
@@ -379,38 +395,35 @@
     gap: 1rem;
   }
 
-  .logo2 {
-    max-width: 120px;
-    max-height: 90px;
+  .container-sp {
+    width: 80%;
+    
+  }
+
+  /* Apoya */
+  .support-logos {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-areas:
+      "a b c"
+      "d e";
+    gap: 1px;
   }
 
-  .logo1 {
-    min-width: 150px;
-    min-height: 100px;
+  .support-logos a:nth-child(1) {
+    min-width: 85px;
+    width: 120%;
+  }
+  .support-logos img:nth-child(2),
+  .support-logos img:nth-child(3),
+  .support-logos img:nth-child(4) {
+    max-width: 130px;
+    width: 120%;
+  }
+  .support-logos img:nth-child(5) {
+    max-width: 100px;
     width: 100%;
-    height: auto;
-    object-fit: contain;
   }
-
- /*  .logo1 {
-    min-width: 180px;
-  }
-
-  .logo2 {
-    width: 180px;
-    margin-left: 0;
-  } */
-
-/*   #sponsors .container-sp {
-    width: 180px;
-  }
-
-  #sponsors .container-sp:first-child {
-    margin-left: -40px;
-  } */
 
   #sponsors-2 h3 {
     text-align: center;
@@ -541,12 +554,13 @@
 
   #about h3 {
     font-size: 2svw;
-  }
-
-  #about h3 {
     height: auto;
   }
 
+  /* #about h3 {
+    height: auto;
+  }
+ */
   .prev,
   .next {
     font-size: 12px;
@@ -564,11 +578,68 @@
     width: 5px;
   }
 
-  .container-sp-2 {
+  #sponsors {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.1rem;
+  }
+
+  .container-sp {
     width: 80%;
+    
+  }
+
+  /* Apoya */
+  .support-logos {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-areas:
+      "a b c"
+      "d e";
+    gap: 1px;
+  }
+
+  .support-logos a:nth-child(1) {
+    min-width: 65px;
+    width: 120%;
+  }
+  .support-logos img:nth-child(2),
+  .support-logos img:nth-child(3),
+  .support-logos img:nth-child(4) {
+    max-width: 130px;
+    width: 120%;
+  }
+  .support-logos img:nth-child(5) {
+    max-width: 100px;
+    width: 100%;
+  }
+
+ /*  .logo2 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo3 {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo4 {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    object-fit: contain;
+  } */
+
+  .container-sp-2 {
+    width: 70%;
     margin: auto;
     display: grid;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 15px 15px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;

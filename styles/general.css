@@ -566,7 +566,7 @@ h2 {
 
 .container-sp h3 {
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
     font-size: 1.5rem;
     color: var(--textColor, #fff);
 }
